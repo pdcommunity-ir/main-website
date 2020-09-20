@@ -1,0 +1,29 @@
+.back {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  opacity: .6;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.logos {
+  font-size: 2rem;
+}
+
+.logo {
+  width: 80%;
+}
+
+.license {
+  font-size: .8rem;
+}
+
+.contactUs {
+  padding-top: 32px;
+  padding-bottom: 32px; 
+}
+
+.back a {
+  color: #0ff;
+}

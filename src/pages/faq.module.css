@@ -1,0 +1,40 @@
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: right;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom:10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion.active, .accordion:hover {
+  background-color: #ddd;
+}
+
+.bilbilak {
+  font-size: 3em;
+  color: #777;
+  float: right;
+  margin-left: 18px;
+}
+
+div.panel {
+padding: 0 18px;
+background-color: #ddd;
+max-height: 0;
+overflow: hidden;
+transition: 0.4s ease-in-out;
+margin-bottom:10px;
+margin-top: -10px;
+}
+
+div.panel.show {
+  max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}

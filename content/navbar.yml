@@ -1,0 +1,16 @@
+buttons:
+  - label: خانه
+    link: "/"
+  - label: سوالات متداول
+    link: "/faq/"
+  - label: درباره ما
+    link: "/about/"
+  - label: کاوش
+    type: dropdown
+    items:
+      - label: فهرست داده های عمومی
+        link: "//index.pdcommunity.ir/"
+      - label: جایگزین یاب
+        link: "//alternative.pdcommunity.ir/"
+  - label: مقالات
+    link: "/articles/"

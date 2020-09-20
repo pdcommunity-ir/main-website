@@ -1,0 +1,21 @@
+.commonDiv {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.oddDiv {
+  background-color: #f1f1f1;
+}
+
+.evenDiv {
+  background-color: #fff;
+}
+
+.rowMulti {
+  margin-bottom: 70px;
+}
+
+.fontImage {
+  font-size: 200px;
+  text-align: center;
+}

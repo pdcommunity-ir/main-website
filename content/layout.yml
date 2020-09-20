@@ -1,0 +1,7 @@
+helmet:
+  - tag: link
+    options:
+      rel: stylesheet
+      type: text/css
+      href: /dist/static/bootstrap.css
+    
