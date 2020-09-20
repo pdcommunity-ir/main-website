@@ -3,13 +3,16 @@ import path from "path";
 import { rootFolder } from "../paths.mjs";
 import AssetPlugin from "assets-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import ErrorOverlayPlugin from "error-overlay-webpack-plugin";
 
 const clientConfig = {
+  devtool: 'cheap-module-source-map',
   plugins: [
     new AssetPlugin({ path: path.join(rootFolder, 'babeloutput')}),
     new MiniCssExtractPlugin({
       filename: 'app.[hash].bundle.css',
     }),
+    new ErrorOverlayPlugin(),
   ],
   module: {
     rules: [

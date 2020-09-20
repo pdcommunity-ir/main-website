@@ -48,5 +48,3 @@ export const buildData = async () => {
   }));
   await writeFile(path.join(buildFolder, 'dist', 'data.bundle.json'), JSON.stringify(result));
 };
-
-buildData();

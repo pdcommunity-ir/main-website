@@ -8,7 +8,6 @@ const main = async () => {
   const data = await (await fetch("/dist/data.bundle.json", {
     cache: 'no-cache',
   })).json();
-  await new Promise(res => setTimeout(res, 2000));
   ReactDOM.render(
     <SSRCC.Provider value={data}><BrowserRouter><App/></BrowserRouter></SSRCC.Provider>,
     document.getElementById('app'),
