@@ -15,6 +15,9 @@ export const ArticlePage = () => {
       </h1>
       <Row>
         <Col md={9}>
+          {d.frontmatter.incomplete && <p style={{ fontStyle: 'italic' }}>
+            این مقاله پیش‌نویس است و محتوای آن کامل نیست.
+          </p>}
           <div dangerouslySetInnerHTML={{ __html: d.html }}/>
         </Col>
         <Col md={3}>

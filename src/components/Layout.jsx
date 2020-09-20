@@ -31,7 +31,9 @@ export const Layout = ({ children, pure }) => {
           font-weight: normal;
           font-style: normal;
           }
-          body,h1,h2,h3,h4,h5,h6 {font-family: Vazir}`}
+          body,h1,h2,h3,h4,h5,h6 {font-family: Vazir}
+          html {scroll-behavior: smooth;}
+          h1,h2,h3,h4,h5,h6 {font-weight: bold;}`}
         </style>
       </Helmet>
       <Navbar/>
