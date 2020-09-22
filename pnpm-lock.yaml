@@ -13,7 +13,9 @@ dependencies:
   react-bootstrap: 1.3.0_react-dom@16.13.1+react@16.13.1
   react-dom: 16.13.1_react@16.13.1
   react-helmet: 6.1.0_react@16.13.1
+  react-intersection-observer: 8.28.5_react@16.13.1
   react-router-dom: 5.2.0_react@16.13.1
+  react-typed: 1.2.0_react-dom@16.13.1+react@16.13.1
   style-loader: 1.2.1_webpack@4.44.1
   yamljs: 0.3.0
 devDependencies:
@@ -4663,6 +4665,14 @@ packages:
       react: '>=16.3.0'
     resolution:
       integrity: sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
+  /react-intersection-observer/8.28.5_react@16.13.1:
+    dependencies:
+      react: 16.13.1
+    dev: false
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^17.0.0
+    resolution:
+      integrity: sha512-Y5oi1+6b8QBvTTczmOYHEAcQ21AU/at5joZUf8L3cNWwnB5fScV0on5I/PiHczHeq9YGG/abXpkjFvaSJIB0Pg==
   /react-is/16.13.1:
     dev: false
     resolution:
@@ -4744,6 +4754,18 @@ packages:
       react-dom: '>=16.6.0'
     resolution:
       integrity: sha512-Djqr7OQ2aPUiYurhPalTrVy9ddmFCCzwhqQmtN+J3+3DzLO209Fdr70QrN8Z3DsglWql6iY1lDWAfpFiBtuKGw==
+  /react-typed/1.2.0_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      prop-types: 15.7.2
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+      typed.js: 2.0.11
+    dev: false
+    peerDependencies:
+      react: ^16.3.0
+      react-dom: ^16.3.0
+    resolution:
+      integrity: sha512-aDsaA6zkjAFJs8285APOqE85l/kwJ0/ZJmBhARwUrza4TTttrMM5FcMCGEDdThdfUdHo/0l9WXmxp1m2ik4qdw==
   /react/16.13.1:
     dependencies:
       loose-envify: 1.4.0
@@ -5471,6 +5493,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-oVe6QC2iTpv5V/mqadUk7tQpAaY=
+  /typed.js/2.0.11:
+    dev: false
+    resolution:
+      integrity: sha512-1ZORHalEyLob34q738mqmwp0pT6syMigB1SZuTItqdhovWBKFIt7I5uVALXAGQZCg2MCtihCt6uqkoqPJK+9iQ==
   /typedarray/0.0.6:
     dev: true
     resolution:
@@ -5778,7 +5804,9 @@ specifiers:
   react-bootstrap: ^1.3.0
   react-dom: ^16.13.1
   react-helmet: ^6.1.0
+  react-intersection-observer: ^8.28.5
   react-router-dom: ^5.2.0
+  react-typed: ^1.2.0
   style-loader: ^1.2.1
   webpack: ^4.44.1
   webpack-node-externals: ^2.5.2

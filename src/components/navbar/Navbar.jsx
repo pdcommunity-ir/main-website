@@ -4,16 +4,19 @@ import { Navbar as RBN, Nav, NavDropdown, Fade } from "react-bootstrap";
 import styles from "./navbar.module.css";
 import { useSSRContent } from "../../useSSRContent";
 
-const NItem = ({ to, label }) => (
-  <Nav.Link as={Link} className={styles.navbutton} to={to}>{label}</Nav.Link>
+const NItem = ({ to, label, fg }) => (
+  <Nav.Link style={{ color: fg }} as={Link} className={styles.navbutton} to={to}>
+    {label}
+  </Nav.Link>
 );
 
-const LangButton = ({ to, label }) => {
+const LangButton = ({ to, label, bg, fg }) => {
   const [isOn, setOn] = useState(false);
   return (
     <button 
-      as={Link} className={styles.langButton} to={to}
+      className={styles.langButton}
       onClick={()=>setOn(!isOn)}
+      style={{ backgroundColor: bg, color: fg }}
     >
       {label}
       <div className={`${styles.langPage} ${(isOn ? '' : styles.hidden)}`}>
@@ -29,16 +32,22 @@ const LangButton = ({ to, label }) => {
   );
 };
 
-export const Navbar = () => {
+export const Navbar = ({ bg = "#f44333", fg = "#fff" }) => {
   const data = useSSRContent('/navbar.yml').buttons;
   return (
-    <RBN className={styles.navbar} bg="primary" variant="dark" fixed="top" expand="md">
+    <RBN 
+      className={styles.navbar} variant="dark" fixed="top" expand="md"
+      style={{ backgroundColor: bg }}
+    >
       <RBN.Toggle aria-controls="responsive-navbar-nav" />
       <RBN.Collapse id="responsive-navbar-nav"><Nav>
         {data.map(x => {
           if (x.type === 'dropdown') {
             return (
-              <NavDropdown key={x.label} className={styles.navbutton} title={x.label}>
+              <NavDropdown 
+                style={{ color: fg }}
+                key={x.label} className={styles.navbutton} title={x.label}
+              >
                 {x.items.map((y) => {
                   return (
                     <NavDropdown.Item
@@ -49,10 +58,10 @@ export const Navbar = () => {
               </NavDropdown>
             );
           }
-          return <NItem key={x.label} to={x.link} label={x.label}/>;
+          return <NItem fg={fg} key={x.label} to={x.link} label={x.label}/>;
         })}
       </Nav></RBN.Collapse>
-      <LangButton to="/" label="فارسی"/>
+      <LangButton to="/" bg={bg} fg={fg} label="فارسی"/>
     </RBN>
   );
 };

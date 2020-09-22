@@ -1,6 +1,3 @@
-.navbutton, .navbutton > a {
-  color: white !important;
-}
 
 .langPage {
   background-color: black;
@@ -25,8 +22,6 @@
 
 .langButton {
   float: right;
-  background-color: #f44333;
-  color: white;
   border: solid;
   border-radius: 20px;
   margin: 3px 10px;
@@ -38,6 +33,15 @@
   background-color: white !important;
 }
 
+.navbutton > a {
+  color: inherit !important;
+  transition: unset;
+}
+
 .navbar {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.navbar, .navbar * {
+  transition: all 0.5s ease;
 }

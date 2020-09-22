@@ -7,13 +7,12 @@
 
 import React, { useEffect } from "react"
 
-import Header from "./header"
 import { Footer } from "./footer/Footer"
 import { Helmet } from "react-helmet"
 import { Container } from "react-bootstrap"
-import { Navbar } from "./navbar/navbar"
+import { Navbar } from "./navbar/Navbar.jsx"
 
-export const Layout = ({ children, pure }) => {
+export const Layout = ({ children, pure, navbar }) => {
   return (
     <>
       <Helmet bodyAttributes={{ dir: 'rtl' }}>
@@ -36,7 +35,7 @@ export const Layout = ({ children, pure }) => {
           h1,h2,h3,h4,h5,h6 {font-weight: bold;}`}
         </style>
       </Helmet>
-      <Navbar/>
+      <Navbar {...navbar}/>
       {pure ? children : <>
         <div style={{ height: '64px' }}/>
         <Container>{children}</Container>
