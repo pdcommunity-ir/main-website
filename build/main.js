@@ -24,6 +24,8 @@ const urlsBuilder = (data) => [
 const htmlTemplate = (elem, helmet, wa) => `
 <html ${helmet.htmlAttributes.toString()}>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">      
 ${helmet.title.toString()}
 ${helmet.meta.toString()}
 ${helmet.link.toString()}
