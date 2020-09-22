@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { Layout } from '../components/Layout.jsx';
 import { Row, Col } from 'react-bootstrap';
 import { useSSRContent } from '../useSSRContent.js';
+import { HtmlElement } from '../components/HtmlElement.jsx';
 
 export const ArticlePage = () => {
   const { id } = useParams('id');
@@ -18,7 +19,7 @@ export const ArticlePage = () => {
           {d.frontmatter.incomplete && <p style={{ fontStyle: 'italic' }}>
             این مقاله پیش‌نویس است و محتوای آن کامل نیست.
           </p>}
-          <div dangerouslySetInnerHTML={{ __html: d.html }}/>
+          <HtmlElement content={d.html}/>
         </Col>
         <Col md={3}>
           <div style={{ position: 'sticky', top: '100px' }}>
