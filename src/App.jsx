@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import { ArticleIndex } from "./pages/ArticleIndex.jsx";
 import { ArticlePage } from "./pages/ArticlePage.jsx";
 import { FAQ } from "./pages/FAQ.jsx";
@@ -8,6 +8,7 @@ import { NotFoundPage } from "./pages/NotFoundPage.jsx";
 
 export const App = () => (
   <Switch>
+    <Route path="/:url*" exact strict render={props => <Redirect to={`${props.location.pathname}/`}/>}/>
     <Route path="/" exact>
       <IndexPage/>
     </Route>
