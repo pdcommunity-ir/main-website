@@ -57,10 +57,6 @@ sections:
   - type: table3
     text:
       title: اقدام کنید
-    primaryButton: به جنگ داده های انحصاری بروید
-    otherButton:
-      label: بیشتر بدانید
-      link: "/articles/proprietary-problems/"
     sections:
       - title: به دیگران اطلاع دهید
         icon: fa-users

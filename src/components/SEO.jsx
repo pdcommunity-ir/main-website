@@ -8,9 +8,9 @@ export const SEO = ({ description, lang, meta = [], title }) => {
   return (
     <Helmet
       htmlAttributes={{
-        lang: 'fa-IR',
+        lang: 'fa',
       }}
-      title={`${title} | boz`}
+      title={`${title} | جمعیت داده های عمومی`}
       meta={[
         {
           name: `description`,

@@ -1,0 +1,12 @@
+ready:
+  color: green
+  text: آماده
+dead:
+  color: "#f00"
+  text: مرده
+in_dev:
+  color: gold
+  text: در حال توسعه
+fallback:
+  color: "#ddd"
+  text: نامعلوم
