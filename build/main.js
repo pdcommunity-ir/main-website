@@ -19,6 +19,11 @@ const urlsBuilder = (data) => [
       return x.slice(0, -3) + "/";
     }
   }),
+  ...Object.keys(data).filter((x)=>x.startsWith('/blogs/')).map((x)=>{
+    if (x.endsWith('.md')) {
+      return x.slice(0, -3) + "/";
+    }
+  }),
   ...Object.keys(data).filter((x)=>x.startsWith('/projects/')).map((x)=>{
     if (x.endsWith('.yml')) {
       return x.slice(0, -4) + "/";

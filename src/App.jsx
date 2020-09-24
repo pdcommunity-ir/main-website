@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import { ArticleIndex } from "./pages/ArticleIndex.jsx";
 import { ArticlePage } from "./pages/ArticlePage.jsx";
+import { BlogPage } from "./pages/blog/BlogPage.jsx";
 import { FAQ } from "./pages/FAQ.jsx";
 import { About } from "./pages/About.jsx";
 import { IndexPage } from "./pages/IndexPage.jsx";
@@ -38,6 +39,9 @@ export const App = () => (
       </Route>
       <Route path="/projects/:id">
         <ProjectPage/>
+      </Route>
+      <Route path="/blogs/:id">
+        <BlogPage/>
       </Route>
       <Route path="/articles/:id">
         <ArticlePage/>
