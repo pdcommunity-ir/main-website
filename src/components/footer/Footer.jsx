@@ -23,11 +23,6 @@ export const Footer = () => {
               {' '}<a rel="me" href="https://mas.to/@pdcommunity"><i className="fa fa-mastodon w3-hover-opacity"></i></a>
             </div>
           </div>
-          <p>
-            قدرت گرفته از <a href="https://www.gatsbyjs.com/" target="_blank">
-              Gatsby
-            </a>
-          </p>
           <p className={styles.license}> 
             <a href="https://framagit.org/pdcommunity/new-site">
               منبع این سایت

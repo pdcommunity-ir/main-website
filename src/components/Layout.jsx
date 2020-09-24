@@ -7,7 +7,7 @@
 
 import React, { useEffect } from "react"
 
-import { Footer } from "./footer/Footer"
+import { Footer } from "./footer/Footer.jsx"
 import { Helmet } from "react-helmet"
 import { Container } from "react-bootstrap"
 import { Navbar } from "./navbar/Navbar.jsx"
