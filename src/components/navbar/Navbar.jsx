@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import React, { useState } from "react"
 import { Navbar as RBN, Nav, NavDropdown, Fade } from "react-bootstrap";
 import styles from "./navbar.module.css";
@@ -12,6 +12,7 @@ const NItem = ({ to, label, fg }) => (
 
 const LangButton = ({ to, label, bg, fg }) => {
   const [isOn, setOn] = useState(false);
+  const location = useLocation();
   return (
     <button 
       className={styles.langButton}
@@ -20,11 +21,11 @@ const LangButton = ({ to, label, bg, fg }) => {
     >
       {label}
       <div className={`${styles.langPage} ${(isOn ? '' : styles.hidden)}`}>
-        <a href="https://en.pdcommunity.ir/">
+        <a href={`https://en.pdcommunity.ir${location.pathname}`}>
           English
         </a>
         <br/>
-        <a href="https://pdcommunity.ir/">
+        <a href={`https://pdcommunity.ir${location.pathname}`}>
           فارسی
         </a>
       </div>

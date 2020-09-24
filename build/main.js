@@ -13,10 +13,15 @@ const readFile = promisify(fs.readFile);
 const mkdir = promisify(fs.mkdir);
 
 const urlsBuilder = (data) => [
-  "/", "/about/", "/lanat/", "/faq/", "/articles/",
+  "/", "/about/", "/faq/", "/articles/",
   ...Object.keys(data).filter((x)=>x.startsWith('/articles/')).map((x)=>{
     if (x.endsWith('.md')) {
-      return x.slice(0, -3);
+      return x.slice(0, -3) + "/";
+    }
+  }),
+  ...Object.keys(data).filter((x)=>x.startsWith('/projects/')).map((x)=>{
+    if (x.endsWith('.yml')) {
+      return x.slice(0, -4) + "/";
     }
   }),
 ];

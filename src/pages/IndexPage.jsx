@@ -13,14 +13,15 @@ import { SectionYml } from "../components/SectionYml.jsx";
 
 export const IndexPage = () => {
   const data = useSSRContent('/home.yml');
-  const { ref, inView } = useInView({
+  const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: .1,
   });
+  const isBlack = entry ? inView : true;
   return (
     <Layout pure navbar={{
-      bg: inView ? '#000' : '#f44333',
-      fg: inView ? '#f44333' : '#fff',
+      bg: isBlack ? '#000' : '#f44333',
+      fg: isBlack ? '#f44333' : '#fff',
     }}>
       <SEO title={data.header.name}/>
       <div ref={ref} className={styles.header}>
