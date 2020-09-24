@@ -3,6 +3,10 @@ import { buildData } from "./buildData.mjs";
 import { rootFolder, buildFolder } from "../paths.mjs";
 import fsEx from "fs-extra";
 import path from "path";
+import fs from "fs";
+import { promisify } from "util";
+
+const rmdir = promisify(fs.rmdir);
 
 const callback = (err, stats) => { // Stats Object
   if (err) {
@@ -13,14 +17,14 @@ const callback = (err, stats) => { // Stats Object
 };
 
 const main = async () => {
-  console.log('ah');
+  await rmdir(buildFolder, { recursive: true });
   serverCompiler.run(callback);
   clientCompiler.run(callback);
-  await buildData();
   await fsEx.copy(
     path.join(rootFolder, 'static'),
     path.join(buildFolder, 'dist', 'static'),
   );
+  await buildData();
 };
 
 main();
