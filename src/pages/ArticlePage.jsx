@@ -4,6 +4,7 @@ import { Layout } from '../components/Layout.jsx';
 import { Row, Col } from 'react-bootstrap';
 import { useSSRContent } from '../useSSRContent.js';
 import { HtmlElement } from '../components/HtmlElement.jsx';
+import { SEO } from '../components/SEO.jsx';
 
 export const ArticlePage = () => {
   const { id } = useParams('id');
@@ -11,6 +12,7 @@ export const ArticlePage = () => {
   const d = db[`/articles/${id}.md`];
   return (
     <Layout>
+      <SEO title={d.frontmatter.title}/>
       <h1 style={{ paddingTop: '1rem', paddingBottom: '1rem'}}>
         {d.frontmatter.title}
       </h1>
