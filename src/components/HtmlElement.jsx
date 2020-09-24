@@ -7,8 +7,11 @@ export const HtmlElement = ({ content, ...props }) => {
     const targetLink = e.target.closest('a');
     if(!targetLink) return;
     if (targetLink.host !== window.location.host) return;
-    e.preventDefault();
-    history.push(targetLink.pathname);
+    if (targetLink.pathname !== window.location.pathname) {
+      e.preventDefault();
+      history.push(targetLink.pathname);
+      return;
+    }
   };
   return (
     <div {...props} onClick={handleLink} dangerouslySetInnerHTML={{ __html: content }}/>
