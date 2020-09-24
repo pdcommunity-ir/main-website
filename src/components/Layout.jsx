@@ -16,6 +16,7 @@ export const Layout = ({ children, pure, navbar }) => {
   return (
     <>
       <Helmet bodyAttributes={{ dir: 'rtl' }}>
+        <link rel="icon" href="/dist/static/images/icon.png"/>
         <link type="text/css" rel="stylesheet" href="/dist/static/bootstrap.css"/>
         <link
           rel="stylesheet"
