@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 export const SEO = ({ description, lang, meta = [], title }) => {
   
-  const metaDescription = description || 'salam';
+  const metaDescription = description || 'جمعیت داده های عمومی';
 
   return (
     <Helmet
@@ -23,6 +23,10 @@ export const SEO = ({ description, lang, meta = [], title }) => {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: 'https://pdcommunity.ir/dist/static/images/og.png',
         },
         {
           property: `og:type`,
