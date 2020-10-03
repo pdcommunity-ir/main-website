@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Layout } from "../components/Layout.jsx"
 import { SEO } from "../components/SEO.jsx"
 import { useSSRContent } from "../useSSRContent.js";
+import { indexMarkdownFolder } from "../util/indexFolder.js";
 
 const f = (a) => a.map((x) => (
   <li key={x.url}>
@@ -15,21 +16,7 @@ const f = (a) => a.map((x) => (
 
 export const ArticleIndex = () => {
   const data = useSSRContent();
-  const articles = Object.keys(data)
-    .filter((x) => x.startsWith('/articles/'))
-    .map((x) => {
-      if (x.endsWith('.md')) {
-        return {
-          url: x.slice(0, -3) + '/',
-          title: data[x].frontmatter.title,
-          incomplete: data[x].frontmatter.incomplete,
-        };
-      }
-      return {
-        url: '/404/',
-        title: 'broooooooooooooooooooooooooken',
-      };
-    });
+  const articles = indexMarkdownFolder(data, 'articles');
   return ( <Layout>
     <SEO title="فهرست مقالات"/>
     <h1>فهرست مقالات</h1>

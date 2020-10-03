@@ -9,6 +9,7 @@ import { IndexPage } from "./pages/IndexPage.jsx";
 import { NotFoundPage } from "./pages/NotFoundPage.jsx";
 import { withRouter } from 'react-router-dom';
 import { ProjectPage } from "./pages/project/ProjectPage.jsx";
+import { BlogIndex } from "./pages/blog/BlogIndex.jsx";
 
 const ScrollToTop = withRouter(({ history }) => {
   useEffect(() => {
@@ -42,6 +43,9 @@ export const App = () => (
       </Route>
       <Route path="/blogs/:id">
         <BlogPage/>
+      </Route>
+      <Route path="/blogs">
+        <BlogIndex/>
       </Route>
       <Route path="/articles/:id">
         <ArticlePage/>

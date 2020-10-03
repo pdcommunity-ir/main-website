@@ -5,11 +5,13 @@ import { Row, Col } from 'react-bootstrap';
 import { useSSRContent } from '../../useSSRContent.js';
 import { HtmlElement } from '../../components/HtmlElement.jsx';
 import { SEO } from '../../components/SEO.jsx';
+import { indexMarkdownFolder } from '../../util/indexFolder.js';
 
 export const BlogPage = () => {
   const { id } = useParams('id');
   const db = useSSRContent();
   const d = db[`/blogs/${id}.md`];
+  const blogs = indexMarkdownFolder(db, 'blogs');
   return (
     <Layout>
       <SEO title={d.frontmatter.title}/>
@@ -31,16 +33,11 @@ export const BlogPage = () => {
           <div style={{ position: 'sticky', top: '100px' }}>
             <h3>آخرین مطالب</h3>
             <ul>
-              {d.frontmatter.related && d.frontmatter.related.map((x) => {
-                const dx = db[`/articles/${x}.md`];
-                if (!dx) {
-                  console.log('not found article '+x);
-                  return undefined;
-                }
+              {blogs.map((x) => {
                 return (
-                  <li key={x} >
-                    <Link to={`/articles/${x}/`}>
-                      {dx.frontmatter.title}
+                  <li key={x.url} >
+                    <Link to={x.url}>
+                      {x.title}
                     </Link>
                   </li>
                 );

@@ -9,7 +9,8 @@ import { SEO } from '../../components/SEO.jsx';
 
 export const ProjectPage = () => {
   const { id } = useParams('id');
-  const d = useSSRContent(`/projects/${id}.yml`);
+  const dd = useSSRContent(`/projects/${id}.md`);
+  const d = dd.frontmatter;
   return (
     <Layout>
       <SEO title={d.title}/>
@@ -21,7 +22,7 @@ export const ProjectPage = () => {
         <br/>
         {d.link && <> لینک: <a href={`//${d.link}/`}>{d.link}</a> </>}
       </div>
-      <HtmlElement content={d.text}/>
+      <HtmlElement content={dd.html}/>
     </Layout>
   );
 };

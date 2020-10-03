@@ -6,23 +6,11 @@ import { SectionYml } from "../components/SectionYml.jsx";
 import { SEO } from "../components/SEO.jsx";
 import { StatusBadge } from "../components/StatusBadge.jsx";
 import { useSSRContent } from "../useSSRContent.js";
+import { indexMarkdownFolder } from "../util/indexFolder.js";
 
 const AboutSpecial = ({ section }) => {
   const data = useSSRContent();
-  const projects = Object.keys(data)
-    .filter((x) => x.startsWith('/projects/'))
-    .map((x) => {
-      if (x.endsWith('.yml')) {
-        return {
-          url: x.slice(0, -4) + '/',
-          ...data[x],
-        };
-      }
-      return {
-        url: '/404/',
-        title: 'broooooooooooooooooooooooooken',
-      };
-    });
+  const projects = indexMarkdownFolder(data, 'projects');
   projects.sort((a, b) => b.year - a.year);
   return ( <Container>
     <h1>{section.title}</h1>

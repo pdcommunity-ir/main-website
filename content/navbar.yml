@@ -14,3 +14,5 @@ buttons:
         link: "//alternative.pdcommunity.ir/"
   - label: مقالات
     link: "/articles/"
+  - label: اخبار
+    link: "/blogs/"
