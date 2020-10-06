@@ -1,0 +1,31 @@
+name: جمعیت داده های عمومی
+contact:
+  label: تماس با ما
+  items:
+    - icon: fa-envelope
+      link: mailto:info@pdcommunity.ir
+    - icon: fa-matrix-org
+      link: https://matrix.to/#/#pdcommunity_room:matrix.org
+    - icon: fa-peertube
+      link: https://www.open.tube/accounts/pdcommunity@open.tube/video-channels
+    - icon: fa-mastodon
+      link: https://mas.to/@pdcommunity
+    - icon: fa-twitter
+      link: https://twitter.com/pdcommunity_ir
+credit: |
+  <a href="https://framagit.org/pdcommunity/main-website">منبع این سایت</a>
+  تحت <a href="/license/gpl3">پروانه عام گنو نسخه ۳</a> و محتوا تحت پروانه
+  <a href="/license/cc0">کریتیو کامانز صفر</a> به صورت عمومی در دسترس است
+links:
+  label: پیوند های مفید
+  items:
+    - href: "/articles/proprietary-problems/"
+      label: داده های انحصاری چه مشکلاتی دارند؟
+    - href: "/articles/why-someone-make-common-data/"
+      label: انگیزه های تولید داده عمومی
+    - href: "/articles/prevent-make-proprietary/"
+      label: چگونه داده انحصاری تولید نکنیم؟
+    - href: "/articles/public-data-dream/"
+      label: رویای داده های عمومی
+    - href: "/license"
+      label: پروانه های حق تکثیر
