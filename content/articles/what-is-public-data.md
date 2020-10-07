@@ -6,6 +6,7 @@ related:
   - data-as-magical-mine
   - public-vs-free-vs-opensource
   - fork-it
+  - why-name-public-data
 ---
 
 منظور از داده های عمومی، داده هایی هستند که:

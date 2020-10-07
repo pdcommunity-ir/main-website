@@ -6,6 +6,7 @@ related:
   - what-is-copyleft
   - public-data-vs-communism
   - linux-the-biggest
+  - why-name-public-data
 ---
 
 داده های عمومی، آزاد و متن باز هر سه به یک مفهوم اشاره دارند. داده ای که مالکیت آن برای عموم
