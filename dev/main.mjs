@@ -12,6 +12,7 @@ const writeFile = promisify(fs.writeFile);
 
 const main = async () => {
   await rmdir(buildFolder, { recursive: true });
+  let started = false;
   clientCompiler.watch({}, async (err, stats) => {
     if (err || stats.hasErrors()) {
       if (err) {
@@ -25,7 +26,6 @@ const main = async () => {
     const wa = JSON.parse((
       await readFile(path.join(rootFolder, 'babeloutput', 'webpack-assets.json'))
     ).toString());
-    await buildData();
     await fsEx.copy(
       path.join(rootFolder, 'static'),
       path.join(buildFolder, 'dist', 'static'),
@@ -44,7 +44,15 @@ const main = async () => {
     </html>
     `);
     console.log('Builded at ' + (new Date));
+    started = true;
   });
+  (async () => {
+    while (true) {
+      await new Promise(res=>setTimeout(res, 2000));
+      if (!started) continue;
+      await buildData();
+    }
+  })();
 };
 
 main();
