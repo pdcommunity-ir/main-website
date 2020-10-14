@@ -4,4 +4,5 @@ layout: article.swig
 incomplete: true
 related:
   - proprietary-problems
+  - customer-or-product
 ---
