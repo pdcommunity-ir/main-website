@@ -6,9 +6,12 @@ import styles from "./faq.module.css";
 import classNames from "classnames";
 import { useSSRContent } from "../useSSRContent";
 import { HtmlElement } from "../components/HtmlElement.jsx";
+import { Link } from "react-router-dom";
 
 const Question = ({ q }) => {
   const [active, setActive] = useState(false);
+  const data = useSSRContent();
+  const w = data['/faq.yml'].words;
   return ( <div onClick={()=>setActive(!active)}>
     <div className={classNames({
       [styles.accordion]: true,
@@ -17,13 +20,23 @@ const Question = ({ q }) => {
       <span className={styles.bilbilak}>{active ? '➖' : '➕'}</span>
       <h2>{q.question}</h2>
     </div>
-    <HtmlElement
-      className={classNames({
-        [styles.panel]: true,
-        [styles.show]: active,
-      })}
-      content={q.answer}
-    />
+    <div className={classNames({
+      [styles.panel]: true,
+      [styles.show]: active,
+    })}>
+      <HtmlElement
+        content={q.answer}
+      />
+      {q.related && <p>
+        <h5>{w.related}:</h5>
+        <ul>
+          {q.related.map((x)=>{
+            const title = data[`/articles/${x}.md`].frontmatter.title;
+            return <li><Link key={x} to={`/articles/${x}/`}>{title}</Link></li>;
+          })}
+        </ul>
+      </p>}
+    </div>
   </div> );
 };
 
