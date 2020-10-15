@@ -11,8 +11,10 @@ import { Footer } from "./footer/Footer.jsx"
 import { Helmet } from "react-helmet"
 import { Container } from "react-bootstrap"
 import { Navbar } from "./navbar/Navbar.jsx"
+import { useLocation } from "react-router-dom"
 
 export const Layout = ({ children, pure, navbar }) => {
+  const location = useLocation();
   return (
     <>
       <Helmet bodyAttributes={{ dir: 'rtl' }}>
@@ -42,6 +44,14 @@ export const Layout = ({ children, pure, navbar }) => {
         <Container>{children}</Container>
       </>}
       <Footer/>
+      <img
+        src={"https://pdcommunity.goatcounter.com/count?p="+location.pathname}
+        style={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+        }}
+      />
     </>
   )
 };
