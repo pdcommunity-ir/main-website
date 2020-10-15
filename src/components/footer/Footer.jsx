@@ -21,11 +21,11 @@ export const Footer = () => {
             </p>
             <div className={styles.logos}>
               {data.contact.items.map((x)=>(
-                <>
+                <React.Fragment key={x.link}>
                   <a href={x.link}>
                     <i className={`fa ${x.icon} w3-hover-opacity`}/>
                   </a>{' '}
-                </>  
+                </React.Fragment>  
               ))}
             </div>
           </div>
@@ -34,7 +34,9 @@ export const Footer = () => {
         <Col md={3}>
           {data.links.label}
           <br/>
-          {data.links.items.map((x)=>(<><Link to={x.href}>{x.label}</Link><br/></>))}
+          {data.links.items.map((x)=>(
+            <React.Fragment key={x.href}><Link to={x.href}>{x.label}</Link><br/></React.Fragment>
+          ))}
         </Col>
       </Row></Container>
     </footer>
