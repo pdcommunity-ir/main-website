@@ -53,6 +53,7 @@ sections:
         را به وسیله کیو آر کد چاپ کنید.
       </p>
   - title: تماس با ما
+    id: contact
     type: text
     text: |
       <ul>

@@ -15,6 +15,7 @@ dependencies:
   react-helmet: 6.1.0_react@16.13.1
   react-intersection-observer: 8.28.5_react@16.13.1
   react-router-dom: 5.2.0_react@16.13.1
+  react-router-hash-link: 2.2.2_f32e785fa5e199175d00c0f3e09c74b3
   react-typed: 1.2.0_react-dom@16.13.1+react@16.13.1
   style-loader: 1.2.1_webpack@4.44.1
   yamljs: 0.3.0
@@ -4714,6 +4715,17 @@ packages:
       react: '>=15'
     resolution:
       integrity: sha512-gxAmfylo2QUjcwxI63RhQ5G85Qqt4voZpUXSEqCwykV0baaOTQDR1f0PmY8AELqIyVc0NEZUj0Gov5lNGcXgsA==
+  /react-router-hash-link/2.2.2_f32e785fa5e199175d00c0f3e09c74b3:
+    dependencies:
+      prop-types: 15.7.2
+      react: 16.13.1
+      react-router-dom: 5.2.0_react@16.13.1
+    dev: false
+    peerDependencies:
+      react: '>=15'
+      react-router-dom: '>=4'
+    resolution:
+      integrity: sha512-+8u5aAiRVWAFutH2Zwcm7UiuHmfed3Yn+d6aMVP8WGclMSv2ySAbGx836UifZO/+5o5QVhOS71soYHy0NVJN5g==
   /react-router/5.2.0_react@16.13.1:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -5806,6 +5818,7 @@ specifiers:
   react-helmet: ^6.1.0
   react-intersection-observer: ^8.28.5
   react-router-dom: ^5.2.0
+  react-router-hash-link: ^2.2.2
   react-typed: ^1.2.0
   style-loader: ^1.2.1
   webpack: ^4.44.1

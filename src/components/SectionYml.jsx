@@ -112,6 +112,7 @@ export const SectionYml = ({ sections, special: SpecialHandler }) => (
           [styles.oddDiv]: i % 2 === 1,
           [styles.evenDiv]: i % 2 === 0,
         })} id={`section${i}`}>
+          {x.id && <div id={x.id} style={{ position: 'relative', top: '-5rem' }}/>}
           {inner}
         </div>
       );

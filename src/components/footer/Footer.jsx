@@ -4,6 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import { useSSRContent } from "../../useSSRContent.js";
 import { HtmlElement } from "../HtmlElement.jsx";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const Footer = () => {
   const data = useSSRContent('/footer.yml');
@@ -17,7 +18,7 @@ export const Footer = () => {
         <Col md={6}>
           <div className={styles.contactUs}>
             <p>
-              <a href="/about#contact">{data.contact.label}</a>
+              <HashLink to="/about#contact">{data.contact.label}</HashLink>
             </p>
             <div className={styles.logos}>
               {data.contact.items.map((x)=>(
