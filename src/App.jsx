@@ -10,6 +10,7 @@ import { NotFoundPage } from "./pages/NotFoundPage.jsx";
 import { withRouter } from 'react-router-dom';
 import { ProjectPage } from "./pages/project/ProjectPage.jsx";
 import { BlogIndex } from "./pages/blog/BlogIndex.jsx";
+import { LicensePage } from "./pages/license/LicensePage.jsx";
 
 const ScrollToTop = withRouter(({ history }) => {
   useEffect(() => {
@@ -40,6 +41,9 @@ export const App = () => (
       </Route>
       <Route path="/projects/:id">
         <ProjectPage/>
+      </Route>
+      <Route path="/license/:id">
+        <LicensePage/>
       </Route>
       <Route path="/blogs/:id">
         <BlogPage/>
