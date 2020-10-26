@@ -1,6 +1,7 @@
 ---
 title: تامین مالی جمعی چیست؟
-layout: article.swig
+category:
+  - economy
 incomplete: true
 related:
   - make-money-from-developing

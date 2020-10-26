@@ -1,6 +1,7 @@
 ---
 title: مساله مفت سواری
-layout: article.swig
+category:
+  - economy
 latestId: 1
 related:
   - crowdfunding

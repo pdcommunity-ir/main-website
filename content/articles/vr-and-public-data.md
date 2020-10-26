@@ -1,6 +1,7 @@
 ---
 title: فناوری واقعیت مجازی و داده های عمومی
-layout: article.swig
+category:
+  - software
 incomplete: true
 related:
   - distributed-social-network

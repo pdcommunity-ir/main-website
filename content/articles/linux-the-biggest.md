@@ -1,7 +1,8 @@
 ---
 title: لینوکس، پرمشارکت ترین پروژه جهان
-layout: article.swig
-latestId: 4
+category:
+  - software
+  - success
 related:
   - osm-success
   - reprap-success

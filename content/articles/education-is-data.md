@@ -1,5 +1,7 @@
 ---
 title: آموزش نوعی داده است
+category:
+  - education
 related:
   - public-data-dream
 ---

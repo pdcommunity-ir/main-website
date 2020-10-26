@@ -1,6 +1,7 @@
 ---
 title: چگونه از مشارکت در ساخت داده های انحصاری جلوگیری کنیم
-layout: article.swig
+category:
+  - economy
 related:
   - proprietary-problems
   - make-money-from-developing
@@ -34,4 +35,4 @@ related:
 استفاده می شود و نواقصش توسط آن ها بر طرف می شود و ابزار شما به مرور کامل تر می شود.
 شرکت های زیادی مانند گوگل و فیسبوک از این مطلب استفاده کرده و بعضی از داده های خود را به
 صورت عمومی منتشر می کنند. 
-[برای اطلاعات بیشتر کلیک کنید.](/articles/why-someone-make-common-data#tool-develop)
+[برای اطلاعات بیشتر قسمت توسعه دهنده مجانی برای ابزار این صفحه را ببینید.](/articles/why-someone-make-common-data/#tool-develop)

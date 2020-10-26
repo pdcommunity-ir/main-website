@@ -1,6 +1,7 @@
 ---
 title: دولت و داده های عمومی
-layout: article.swig
+category:
+  - economy
 incomplete: true
 related:
   - public-data-vs-communism

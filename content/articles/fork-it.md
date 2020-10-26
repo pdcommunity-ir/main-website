@@ -1,6 +1,7 @@
 ---
 title: چنگال زدن
-layout: article.swig
+category:
+  - general
 incomplete: true
 related:
   - what-is-public-data

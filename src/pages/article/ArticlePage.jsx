@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Layout } from '../components/Layout.jsx';
+import { Layout } from '../../components/Layout.jsx';
 import { Row, Col } from 'react-bootstrap';
-import { useSSRContent } from '../useSSRContent.js';
-import { HtmlElement } from '../components/HtmlElement.jsx';
-import { SEO } from '../components/SEO.jsx';
+import { useSSRContent } from '../../useSSRContent.js';
+import { HtmlElement } from '../../components/HtmlElement.jsx';
+import { SEO } from '../../components/SEO.jsx';
 
 export const ArticlePage = () => {
   const { id } = useParams('id');

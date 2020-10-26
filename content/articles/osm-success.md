@@ -1,6 +1,8 @@
 ---
 title: داستان موفقیت اوپن استریت مپ
-layout: article.swig
+category:
+  - software
+  - success
 incomplete: true
 related:
   - attribution-pros-and-cons

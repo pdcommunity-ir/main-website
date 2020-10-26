@@ -1,8 +1,8 @@
 ---
 title: احتکار
-layout: article.swig
+category:
+  - economy
 indexWords: ['مثال']
-latestId: 2
 related:
   - proprietary-problems
   - prevent-make-proprietary

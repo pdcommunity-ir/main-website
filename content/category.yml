@@ -1,0 +1,13 @@
+items:
+  - name: general
+    label: مباحث کلی
+  - name: distributed-production
+    label: تولید غیر متمرکز
+  - name: education
+    label: آموزش و داده های عمومی
+  - name: software
+    label: نرم افزار های عمومی
+  - name: economy
+    label: اقتصاد داده های عمومی
+  - name: success
+    label: داده های عمومی موفق در جهان

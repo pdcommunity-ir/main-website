@@ -1,6 +1,7 @@
 ---
 title: برند های غیر متمرکز
-layout: article.swig
+category:
+  - distributed-production
 incomplete: true
 related:
   - public-data-dream

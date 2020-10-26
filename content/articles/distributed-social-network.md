@@ -1,6 +1,7 @@
 ---
 title: شبکه های اجتماعی غیر متمرکز و فدراسیونی
-layout: article.swig
+category:
+  - software
 related:
   - distributed-brands
   - public-vs-free-vs-opensource

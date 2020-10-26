@@ -1,6 +1,8 @@
 ---
 title: رپرپ، تحولی در دنیای پرینتر سه بعدی
-layout: article.swig
+category:
+  - distributed-production
+  - success
 related:
   - desktop-factory
   - public-data-dream

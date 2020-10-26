@@ -1,6 +1,7 @@
 ---
 title: عمومی، آزاد یا متن باز؟ سه هدف با یک مسیر
-layout: article.swig
+category:
+  - software
 related:
   - what-is-public-data
   - what-is-copyleft

@@ -1,6 +1,7 @@
 ---
 title: چگونه هزینه تولید داده های عمومی را تامین کنیم
-layout: article.swig
+category:
+  - economy
 related:
   - why-someone-make-common-data
   - prevent-make-proprietary

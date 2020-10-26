@@ -1,6 +1,7 @@
 ---
 title: انگیزه های تولید داده عمومی
-layout: article.swig
+category:
+  - economy
 related:
   - make-money-from-developing
   - prevent-make-proprietary

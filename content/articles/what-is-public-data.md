@@ -1,6 +1,7 @@
 ---
 title: چه داده هایی واقعا عمومی هستند؟
-layout: article.swig
+category:
+  - general
 indexWords: ['مثال']
 related:
   - data-as-magical-mine

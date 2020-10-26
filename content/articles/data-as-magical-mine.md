@@ -1,6 +1,7 @@
 ---
 title: معدن جادویی
-layout: article.swig
+category:
+  - general
 related:
   - what-is-public-data
 ---

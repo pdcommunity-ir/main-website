@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
-import { ArticleIndex } from "./pages/ArticleIndex.jsx";
-import { ArticlePage } from "./pages/ArticlePage.jsx";
+import { ArticleIndex } from "./pages/article/ArticleIndex.jsx";
+import { ArticlePage } from "./pages/article/ArticlePage.jsx";
 import { BlogPage } from "./pages/blog/BlogPage.jsx";
 import { FAQ } from "./pages/FAQ.jsx";
 import { About } from "./pages/About.jsx";

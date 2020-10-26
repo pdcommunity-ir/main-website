@@ -1,6 +1,7 @@
 ---
 title: بیشینه کردن داده های عمومی به چه قیمتی قابل قبول است؟
-layout: article.swig
+category:
+  - economy
 latestId: 3
 related:
   - proprietary-problems

@@ -1,6 +1,7 @@
 ---
 title: آیا داده های عمومی همان کمونیسم است؟
-layout: article.swig
+category:
+  - economy
 related:
   - public-data-and-government
   - what-is-copyleft

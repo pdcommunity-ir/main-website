@@ -1,6 +1,7 @@
 ---
 title: کپی لفت چیست؟
-layout: article.swig
+category:
+  - general
 related:
   - what-is-public-data
   - attribution-pros-and-cons

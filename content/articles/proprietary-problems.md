@@ -1,7 +1,8 @@
 ---
-layout: article.swig
 title: مشکلات داده های انحصاری
 incomplete: true
+category:
+  - general
 related:
   - why-hoarding-is-bad
   - prevent-make-proprietary

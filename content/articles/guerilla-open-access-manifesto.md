@@ -1,6 +1,8 @@
 ---
 title: مانیفست نیروی دسترسی باز
-layout: article.swig
+category:
+  - general
+  - education
 incomplete: true
 related:
   - public-data-vs-communism

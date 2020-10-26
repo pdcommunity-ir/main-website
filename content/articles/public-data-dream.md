@@ -1,6 +1,7 @@
 ---
-layout: base-final.swig
 title: رویای داده های عمومی
+category:
+  - general
 related:
   - desktop-factory
   - proprietary-problems

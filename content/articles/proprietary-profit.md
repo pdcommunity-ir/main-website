@@ -1,6 +1,7 @@
 ---
 title: سود عظیم انحصار
-layout: article.swig
+category:
+  - economy
 incomplete: true
 related:
   - proprietary-problems

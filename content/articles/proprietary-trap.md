@@ -1,6 +1,7 @@
 ---
 title: داده انحصاری یک تله است
-layout: article.swig
+category:
+  - general
 related:
   - proprietary-problems
 ---

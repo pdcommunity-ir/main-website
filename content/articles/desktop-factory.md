@@ -1,6 +1,7 @@
 ---
 title: کارخانه های رومیزی
-layout: article.swig
+category:
+  - distributed-production
 incomplete: true
 related:
   - public-data-dream

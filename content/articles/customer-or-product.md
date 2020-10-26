@@ -1,5 +1,7 @@
 ---
 title: اگر مشتری نباشید محصول هستید؟
+category:
+  - economy
 related:
   - make-money-from-developing
   - why-someone-make-common-data
