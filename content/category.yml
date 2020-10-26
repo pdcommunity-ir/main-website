@@ -11,3 +11,5 @@ items:
     label: اقتصاد داده های عمومی
   - name: success
     label: داده های عمومی موفق در جهان
+  - name: community
+    label: درباره جمعیت داده های عمومی

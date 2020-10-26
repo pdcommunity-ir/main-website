@@ -1,7 +1,7 @@
 ---
 title: چرا نام داده های عمومی را انتخاب کردیم؟
 category:
-  - general
+  - community
 related:
   - what-is-public-data
   - public-vs-free-vs-opensource

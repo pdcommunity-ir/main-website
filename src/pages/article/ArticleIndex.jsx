@@ -11,28 +11,31 @@ const filterArticles = (articles, cn) => articles.filter(
   ({ category = [] }) => category.find((y) => y === cn)
 );
 
-const f = (articles, categories) => categories.map((x) => (
-  <li key={x.name}>
-    {x.label}
-    <ul>
-      {filterArticles(articles, x.name).map((y)=> (
-        <li key={y.url}>
-          <Link to={y.url}>
-            {y.title}
-          </Link>
-        </li>
-      ))}
-      
-    </ul>
-  </li>
-)); 
+const f = (articles, categories) => categories.map((x) => {
+  const ax = filterArticles(articles, x.name);
+  if (ax.length === 0) return undefined;
+  return (
+    <li key={x.name}>
+      {x.label}
+      <ul>
+        {ax.map((y)=> (
+          <li key={y.url}>
+            <Link to={y.url}>
+              {y.title}
+            </Link>
+          </li>
+        ))}    
+      </ul>
+    </li>
+  );
+}); 
 
 export const ArticleIndex = () => {
   const data = useSSRContent();
   const categories = data['/category.yml'].items;
   const words = data['/article.yml'].index;
   const articles = indexMarkdownFolder(data, 'articles');
-  const badCat = articles.filter((x)=>!x.category.find((y)=>categories.find((z)=>z.name === y)))
+  const badCat = articles.filter((x)=>x.category.find((y)=>!categories.find((z)=>z.name === y)))
   return ( <Layout>
     <SEO title={words.title}/>
     {badCat.length !== 0 && <div>
