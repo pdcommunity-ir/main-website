@@ -6,11 +6,15 @@ import { useSSRContent } from '../../useSSRContent.js';
 import { HtmlElement } from '../../components/HtmlElement.jsx';
 import { SEO } from '../../components/SEO.jsx';
 import { indexMarkdownFolder } from '../../util/indexFolder.js';
+import { NotFoundPage } from '../NotFoundPage.jsx';
 
 export const BlogPage = () => {
   const { id } = useParams('id');
   const db = useSSRContent();
   const d = db[`/blogs/${id}.md`];
+  if (!d) {
+    return <NotFoundPage/>
+  }
   const blogs = indexMarkdownFolder(db, 'blogs');
   return (
     <Layout>

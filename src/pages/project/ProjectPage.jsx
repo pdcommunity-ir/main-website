@@ -6,10 +6,14 @@ import { useSSRContent } from '../../useSSRContent.js';
 import { HtmlElement } from '../../components/HtmlElement.jsx';
 import { StatusBadge } from '../../components/StatusBadge.jsx';
 import { SEO } from '../../components/SEO.jsx';
+import { NotFoundPage } from '../NotFoundPage.jsx';
 
 export const ProjectPage = () => {
   const { id } = useParams('id');
   const dd = useSSRContent(`/projects/${id}.md`);
+  if (!dd) {
+    return <NotFoundPage/>
+  }
   const d = dd.frontmatter;
   return (
     <Layout>
