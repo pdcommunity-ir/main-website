@@ -13,7 +13,7 @@ export const NotFoundPage = () => (
       شما می توانید:
       <ul>
         <li>
-          <Link to="/articles">یک مقاله تصادفی مطالعه کنید</Link>
+          <Link to="/articles/">یک مقاله تصادفی مطالعه کنید</Link>
         </li>
         <li>
           <Link to="/">به صفحه اصلی بروید</Link>
