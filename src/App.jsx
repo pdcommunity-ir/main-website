@@ -11,6 +11,7 @@ import { withRouter } from 'react-router-dom';
 import { ProjectPage } from "./pages/project/ProjectPage.jsx";
 import { BlogIndex } from "./pages/blog/BlogIndex.jsx";
 import { LicensePage } from "./pages/license/LicensePage.jsx";
+import { Membership } from "./pages/Membership.jsx";
 
 const ScrollToTop = withRouter(({ history }) => {
   useEffect(() => {
@@ -38,6 +39,9 @@ export const App = () => (
       </Route>
       <Route path="/faq">
         <FAQ/>
+      </Route>
+      <Route path="/membership">
+        <Membership/>
       </Route>
       <Route path="/projects/:id">
         <ProjectPage/>

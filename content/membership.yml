@@ -1,0 +1,50 @@
+title: عضویت
+survey:
+  locale: fa
+  pages:
+  - name: page1
+    elements:
+    - type: text
+      name: نام
+      isRequired: true
+    - type: text
+      name: نام خانوادگی
+      isRequired: true
+    - type: text
+      description: به تقویم شمسی و با چهار رقم وارد کنید
+      placeHolder: '1370'
+      name: سال تولد
+    - type: text
+      name: شهر محل سکونت
+      description: ما از این اطلاعات برای تشکیل اجتماعات محلی استفاده می کنیم
+    - type: comment
+      name: اطلاعات تماس
+      description: هر مورد را در یک خط و به ترتیبی که ترجیح می دهید وارد کنید
+      placeHolder: |-
+        تلفن: 09123456789
+        ایمیل: x@y.z
+        ماتریس: @x:y.z
+    - type: text
+      name: محل کار یا تحصیل
+    title: مشخصات فردی
+  - name: page2
+    elements:
+    - type: comment
+      name: توانایی ها
+      title: چه توانایی هایی دارید؟
+      description: |-
+        هر مورد را در یک خط بنویسید. سعی کنید
+        مناسب جستجوی ماشینی بنویسید، مثلا غلط تایپی نداشته باشید.
+    - type: text
+      name: وقت آزاد
+      title: چند ساعت در هفته می توانید برای داده های عمومی وقت بگذارید؟
+      description: هفته ۱۶۸ ساعت است که شما ۴۵ ساعت آن را می خوابید
+    - title: آیا امنیت مالی دارید؟
+      type: boolean
+      name: امنیت مالی
+      description: مثلا به وسیله شغل ثابت یا سرمایه قابل توجه
+    - title: آیا سابقه مشارکت در داده های عمومی را دارید؟
+      type: comment
+      name: کارهای قبلی
+      description: اندازه کار اهمیتی ندارد. اگر می توانید، لینکی هم به آن بدهید.
+    title: علاقه مندی ها و توانایی ها

@@ -16,3 +16,5 @@ buttons:
     link: "/articles/"
   - label: اخبار
     link: "/blogs/"
+  - label: عضویت
+    link: "/membership/"

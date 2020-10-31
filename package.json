@@ -31,6 +31,7 @@
     "react-router-hash-link": "^2.2.2",
     "react-typed": "^1.2.0",
     "style-loader": "^1.2.1",
+    "survey-react": "^1.8.11",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
