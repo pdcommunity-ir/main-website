@@ -9,16 +9,16 @@ dependencies:
   fs-extra: 9.0.1
   markdown-it: 11.0.1
   mini-css-extract-plugin: 0.11.2_webpack@4.44.1
-  react: 16.13.1
-  react-bootstrap: 1.3.0_react-dom@16.13.1+react@16.13.1
-  react-dom: 16.13.1_react@16.13.1
-  react-helmet: 6.1.0_react@16.13.1
-  react-intersection-observer: 8.28.5_react@16.13.1
-  react-router-dom: 5.2.0_react@16.13.1
-  react-router-hash-link: 2.2.2_f32e785fa5e199175d00c0f3e09c74b3
-  react-typed: 1.2.0_react-dom@16.13.1+react@16.13.1
+  react: 17.0.1
+  react-bootstrap: 1.3.0_react-dom@17.0.1+react@17.0.1
+  react-dom: 17.0.1_react@17.0.1
+  react-helmet: 6.1.0_react@17.0.1
+  react-intersection-observer: 8.28.5_react@17.0.1
+  react-router-dom: 5.2.0_react@17.0.1
+  react-router-hash-link: 2.2.2_aeb7484792d0c6389f95b68155fa18ae
+  react-typed: 1.2.0_react-dom@17.0.1+react@17.0.1
   style-loader: 1.2.1_webpack@4.44.1
-  survey-react: 1.8.11_react-dom@16.13.1+react@16.13.1
+  survey-react: 1.8.11_react-dom@17.0.1+react@17.0.1
   yamljs: 0.3.0
 devDependencies:
   '@babel/cli': 7.11.6_@babel+core@7.11.6
@@ -1126,19 +1126,19 @@ packages:
     dev: false
     resolution:
       integrity: sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
-  /@restart/context/2.1.4_react@16.13.1:
+  /@restart/context/2.1.4_react@17.0.1:
     dependencies:
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       react: '>=16.3.2'
     resolution:
       integrity: sha512-INJYZQJP7g+IoDUh/475NlGiTeMfwTXUEr3tmRneckHIxNolGOW9CTq83S8cxq0CgJwwcMzMJFchxvlwe7Rk8Q==
-  /@restart/hooks/0.3.25_react@16.13.1:
+  /@restart/hooks/0.3.25_react@17.0.1:
     dependencies:
       lodash: 4.17.20
       lodash-es: 4.17.15
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       react: ^16.8.0
@@ -3916,11 +3916,11 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
-  /mini-create-react-context/0.4.0_prop-types@15.7.2+react@16.13.1:
+  /mini-create-react-context/0.4.0_prop-types@15.7.2+react@17.0.1:
     dependencies:
       '@babel/runtime': 7.11.2
       prop-types: 15.7.2
-      react: 16.13.1
+      react: 17.0.1
       tiny-warning: 1.0.3
     dev: false
     peerDependencies:
@@ -4471,9 +4471,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-mEcocL8igTL8vdhoEputEsPAKeM=
-  /prop-types-extra/1.1.1_react@16.13.1:
+  /prop-types-extra/1.1.1_react@17.0.1:
     dependencies:
-      react: 16.13.1
+      react: 17.0.1
       react-is: 16.13.1
       warning: 4.0.3
     dev: false
@@ -4575,11 +4575,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-87lcbR8+MhcWcUiQ+9e+Rwx8MyR2P7qnt15ynUlbm3TU/fjbgz4GsvfSUDTemtCCtVCqb4ZcEFlyPNTh9bBTLw==
-  /react-bootstrap/1.3.0_react-dom@16.13.1+react@16.13.1:
+  /react-bootstrap/1.3.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
       '@babel/runtime': 7.11.2
-      '@restart/context': 2.1.4_react@16.13.1
-      '@restart/hooks': 0.3.25_react@16.13.1
+      '@restart/context': 2.1.4_react@17.0.1
+      '@restart/hooks': 0.3.25_react@17.0.1
       '@types/classnames': 2.2.10
       '@types/invariant': 2.2.34
       '@types/prop-types': 15.7.3
@@ -4590,12 +4590,12 @@ packages:
       dom-helpers: 5.2.0
       invariant: 2.2.4
       prop-types: 15.7.2
-      prop-types-extra: 1.1.1_react@16.13.1
-      react: 16.13.1
-      react-dom: 16.13.1_react@16.13.1
-      react-overlays: 4.1.0_react-dom@16.13.1+react@16.13.1
-      react-transition-group: 4.4.1_react-dom@16.13.1+react@16.13.1
-      uncontrollable: 7.1.1_react@16.13.1
+      prop-types-extra: 1.1.1_react@17.0.1
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+      react-overlays: 4.1.0_react-dom@17.0.1+react@17.0.1
+      react-transition-group: 4.4.1_react-dom@17.0.1+react@17.0.1
+      uncontrollable: 7.1.1_react@17.0.1
       warning: 4.0.3
     dev: false
     peerDependencies:
@@ -4635,18 +4635,17 @@ packages:
       node: '>=8.10'
     resolution:
       integrity: sha512-X2KYF/lIGyGwP/F/oXgGDF24nxDA2KC4b7AFto+eqzc/t838gpSGiaU8trTqHXOohuLxxc5qi1eDzsl9ucPDpg==
-  /react-dom/16.13.1_react@16.13.1:
+  /react-dom/17.0.1_react@17.0.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      prop-types: 15.7.2
-      react: 16.13.1
-      scheduler: 0.19.1
+      react: 17.0.1
+      scheduler: 0.20.1
     dev: false
     peerDependencies:
-      react: ^16.13.1
+      react: 17.0.1
     resolution:
-      integrity: sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag==
+      integrity: sha512-6eV150oJZ9U2t9svnsspTMrWNyHc6chX0KzDeAOXftRa8bNeOKTTfCJ7KorIwenkHd2xqVTBTCZd79yk/lx/Ug==
   /react-error-overlay/6.0.7:
     dev: false
     resolution:
@@ -4655,21 +4654,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
-  /react-helmet/6.1.0_react@16.13.1:
+  /react-helmet/6.1.0_react@17.0.1:
     dependencies:
       object-assign: 4.1.1
       prop-types: 15.7.2
-      react: 16.13.1
+      react: 17.0.1
       react-fast-compare: 3.2.0
-      react-side-effect: 2.1.0_react@16.13.1
+      react-side-effect: 2.1.0_react@17.0.1
     dev: false
     peerDependencies:
       react: '>=16.3.0'
     resolution:
       integrity: sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
-  /react-intersection-observer/8.28.5_react@16.13.1:
+  /react-intersection-observer/8.28.5_react@17.0.1:
     dependencies:
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^17.0.0
@@ -4683,17 +4682,17 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-  /react-overlays/4.1.0_react-dom@16.13.1+react@16.13.1:
+  /react-overlays/4.1.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
       '@babel/runtime': 7.11.2
       '@popperjs/core': 2.4.4
-      '@restart/hooks': 0.3.25_react@16.13.1
+      '@restart/hooks': 0.3.25_react@17.0.1
       '@types/warning': 3.0.0
       dom-helpers: 5.2.0
       prop-types: 15.7.2
-      react: 16.13.1
-      react-dom: 16.13.1_react@16.13.1
-      uncontrollable: 7.1.1_react@16.13.1
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+      uncontrollable: 7.1.1_react@17.0.1
       warning: 4.0.3
     dev: false
     peerDependencies:
@@ -4701,14 +4700,14 @@ packages:
       react-dom: '>=16.3.0'
     resolution:
       integrity: sha512-vdRpnKe0ckWOOD9uWdqykLUPHLPndIiUV7XfEKsi5008xiyHCfL8bxsx4LbMrfnxW1LzRthLyfy50XYRFNQqqw==
-  /react-router-dom/5.2.0_react@16.13.1:
+  /react-router-dom/5.2.0_react@17.0.1:
     dependencies:
       '@babel/runtime': 7.11.2
       history: 4.10.1
       loose-envify: 1.4.0
       prop-types: 15.7.2
-      react: 16.13.1
-      react-router: 5.2.0_react@16.13.1
+      react: 17.0.1
+      react-router: 5.2.0_react@17.0.1
       tiny-invariant: 1.1.0
       tiny-warning: 1.0.3
     dev: false
@@ -4716,27 +4715,27 @@ packages:
       react: '>=15'
     resolution:
       integrity: sha512-gxAmfylo2QUjcwxI63RhQ5G85Qqt4voZpUXSEqCwykV0baaOTQDR1f0PmY8AELqIyVc0NEZUj0Gov5lNGcXgsA==
-  /react-router-hash-link/2.2.2_f32e785fa5e199175d00c0f3e09c74b3:
+  /react-router-hash-link/2.2.2_aeb7484792d0c6389f95b68155fa18ae:
     dependencies:
       prop-types: 15.7.2
-      react: 16.13.1
-      react-router-dom: 5.2.0_react@16.13.1
+      react: 17.0.1
+      react-router-dom: 5.2.0_react@17.0.1
     dev: false
     peerDependencies:
       react: '>=15'
       react-router-dom: '>=4'
     resolution:
       integrity: sha512-+8u5aAiRVWAFutH2Zwcm7UiuHmfed3Yn+d6aMVP8WGclMSv2ySAbGx836UifZO/+5o5QVhOS71soYHy0NVJN5g==
-  /react-router/5.2.0_react@16.13.1:
+  /react-router/5.2.0_react@17.0.1:
     dependencies:
       '@babel/runtime': 7.11.2
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
-      mini-create-react-context: 0.4.0_prop-types@15.7.2+react@16.13.1
+      mini-create-react-context: 0.4.0_prop-types@15.7.2+react@17.0.1
       path-to-regexp: 1.8.0
       prop-types: 15.7.2
-      react: 16.13.1
+      react: 17.0.1
       react-is: 16.13.1
       tiny-invariant: 1.1.0
       tiny-warning: 1.0.3
@@ -4745,33 +4744,33 @@ packages:
       react: '>=15'
     resolution:
       integrity: sha512-smz1DUuFHRKdcJC0jobGo8cVbhO3x50tCL4icacOlcwDOEQPq4TMqwx3sY1TP+DvtTgz4nm3thuo7A+BK2U0Dw==
-  /react-side-effect/2.1.0_react@16.13.1:
+  /react-side-effect/2.1.0_react@17.0.1:
     dependencies:
-      react: 16.13.1
+      react: 17.0.1
     dev: false
     peerDependencies:
       react: ^16.3.0
     resolution:
       integrity: sha512-IgmcegOSi5SNX+2Snh1vqmF0Vg/CbkycU9XZbOHJlZ6kMzTmi3yc254oB1WCkgA7OQtIAoLmcSFuHTc/tlcqXg==
-  /react-transition-group/4.4.1_react-dom@16.13.1+react@16.13.1:
+  /react-transition-group/4.4.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
       '@babel/runtime': 7.11.2
       dom-helpers: 5.2.0
       loose-envify: 1.4.0
       prop-types: 15.7.2
-      react: 16.13.1
-      react-dom: 16.13.1_react@16.13.1
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
     dev: false
     peerDependencies:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
     resolution:
       integrity: sha512-Djqr7OQ2aPUiYurhPalTrVy9ddmFCCzwhqQmtN+J3+3DzLO209Fdr70QrN8Z3DsglWql6iY1lDWAfpFiBtuKGw==
-  /react-typed/1.2.0_react-dom@16.13.1+react@16.13.1:
+  /react-typed/1.2.0_react-dom@17.0.1+react@17.0.1:
     dependencies:
       prop-types: 15.7.2
-      react: 16.13.1
-      react-dom: 16.13.1_react@16.13.1
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
       typed.js: 2.0.11
     dev: false
     peerDependencies:
@@ -4779,16 +4778,15 @@ packages:
       react-dom: ^16.3.0
     resolution:
       integrity: sha512-aDsaA6zkjAFJs8285APOqE85l/kwJ0/ZJmBhARwUrza4TTttrMM5FcMCGEDdThdfUdHo/0l9WXmxp1m2ik4qdw==
-  /react/16.13.1:
+  /react/17.0.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      prop-types: 15.7.2
     dev: false
     engines:
       node: '>=0.10.0'
     resolution:
-      integrity: sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
+      integrity: sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
   /readable-stream/2.3.7:
     dependencies:
       core-util-is: 1.0.2
@@ -5019,13 +5017,13 @@ packages:
   /safer-buffer/2.1.2:
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /scheduler/0.19.1:
+  /scheduler/0.20.1:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
     resolution:
-      integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
+      integrity: sha512-LKTe+2xNJBNxu/QhHvDR14wUXHRQbVY5ZOYpOGWRzhydZUqrLb2JBvLPY7cAqFmqrWuDED0Mjk7013SZiOz6Bw==
   /schema-utils/1.0.0:
     dependencies:
       ajv: 6.12.5
@@ -5370,10 +5368,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-qe1jfm1Mg7Nq/NSh6XE24gPXROEVsWHxC1LIx//XNlD9iw7YZQGjZNjYN7xGaEG6iKdA8EtNFW6R0gjnVXp+wQ==
-  /survey-react/1.8.11_react-dom@16.13.1+react@16.13.1:
+  /survey-react/1.8.11_react-dom@17.0.1+react@17.0.1:
     dependencies:
-      react: 16.13.1
-      react-dom: 16.13.1_react@16.13.1
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
     dev: false
     peerDependencies:
       react: ^16.5.0
@@ -5528,12 +5526,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
-  /uncontrollable/7.1.1_react@16.13.1:
+  /uncontrollable/7.1.1_react@17.0.1:
     dependencies:
       '@babel/runtime': 7.11.2
       '@types/react': 16.9.49
       invariant: 2.2.4
-      react: 16.13.1
+      react: 17.0.1
       react-lifecycles-compat: 3.0.4
     dev: false
     peerDependencies:
@@ -5823,9 +5821,9 @@ specifiers:
   fs-extra: ^9.0.1
   markdown-it: ^11.0.1
   mini-css-extract-plugin: ^0.11.2
-  react: ^16.13.1
+  react: 17.0.1
   react-bootstrap: ^1.3.0
-  react-dom: ^16.13.1
+  react-dom: 17.0.1
   react-helmet: ^6.1.0
   react-intersection-observer: ^8.28.5
   react-router-dom: ^5.2.0
