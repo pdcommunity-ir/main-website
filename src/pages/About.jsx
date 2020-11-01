@@ -27,7 +27,7 @@ const AboutSpecial = ({ section }) => {
 }
 
 export const About = () => {
-  const data = useSSRContent('/about.yml');
+  const data = useContent('/about.yml');
   return (
     <Layout pure>
       <SEO title={data.title}/>
