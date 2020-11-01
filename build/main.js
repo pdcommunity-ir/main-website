@@ -19,7 +19,7 @@ const removeMD = (x)=>{
 };
 
 const urlsBuilder = (data) => [
-  "/", "/about/", "/faq/", "/articles/", "/blogs/",
+  "/", "/about/", "/faq/", "/articles/", "/blogs/", "/membership/",
   ...Object.keys(data).filter((x)=>x.startsWith('/articles/')).map(removeMD),
   ...Object.keys(data).filter((x)=>x.startsWith('/blogs/')).map(removeMD),
   ...Object.keys(data).filter((x)=>x.startsWith('/projects/')).map(removeMD),

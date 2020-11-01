@@ -15,9 +15,9 @@ const T = ({ children }) => {
   )
 };
 
-Survey.cssType = 'bootstrapmaterial';
-
-let id = '';
+if (typeof document !== 'undefined') {
+  Survey.cssType = 'bootstrapmaterial';
+}
 
 export const Membership = () => {
   const data = useSSRContent('/membership.yml');
@@ -40,9 +40,6 @@ export const Membership = () => {
           اطلاعات محرمانه خودداری کنید.
         </p>
         <Button onClick={() => {
-          id = btoa(String.fromCharCode(
-            ...window.crypto.getRandomValues(new Uint8Array(21)),
-          ));
           setState({ stage: 'current' });
         }}>
           من مایل به ثبت نام هستم
