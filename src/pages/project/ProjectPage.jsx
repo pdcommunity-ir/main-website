@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Layout } from '../../components/Layout.jsx';
 import { Row, Col } from 'react-bootstrap';
-import { useSSRContent } from '../../useSSRContent.js';
+import { useContent } from 'react-ssg';
 import { HtmlElement } from '../../components/HtmlElement.jsx';
 import { StatusBadge } from '../../components/StatusBadge.jsx';
 import { SEO } from '../../components/SEO.jsx';
@@ -10,7 +10,7 @@ import { NotFoundPage } from '../NotFoundPage.jsx';
 
 export const ProjectPage = () => {
   const { id } = useParams('id');
-  const dd = useSSRContent(`/projects/${id}.md`);
+  const dd = useContent(`/projects/${id}.md`);
   if (!dd) {
     return <NotFoundPage/>
   }

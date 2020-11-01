@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import { Row, Col, Container } from "react-bootstrap";
-import { useSSRContent } from "../../useSSRContent.js";
+import { useContent } from "react-ssg";
 import { HtmlElement } from "../HtmlElement.jsx";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export const Footer = () => {
-  const data = useSSRContent('/footer.yml');
+  const data = useContent('/footer.yml');
   return (
     <footer className={styles.back}>
       <Container fluid><Row>

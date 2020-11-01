@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { Layout } from "../../components/Layout.jsx"
 import { SEO } from "../../components/SEO.jsx"
-import { useSSRContent } from "../../useSSRContent.js";
+import { useContent } from "react-ssg";
 import { indexMarkdownFolder } from "../../util/indexFolder.js";
 
 const f = (a) => a.map((x) => (
@@ -50,7 +50,7 @@ const groupByDate = (blogs) => {
 };
 
 export const BlogIndex = () => {
-  const data = useSSRContent();
+  const data = useContent();
   const faLocale = new Intl.DateTimeFormat("fa-IR", {
     month: 'long',
     year: 'numeric',

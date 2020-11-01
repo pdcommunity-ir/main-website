@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 import { Layout } from "../components/Layout.jsx";
 import { SEO } from "../components/SEO.jsx";
-import { useSSRContent } from "../useSSRContent.js";
+import { useContent } from "react-ssg";
 import { Survey } from "survey-react";
 import { Button } from "react-bootstrap";
 
 const T = ({ children }) => {
-  const data = useSSRContent('/membership.yml');
+  const data = useContent('/membership.yml');
   return (
     <Layout>
       <SEO title={data.title} />
@@ -20,7 +20,7 @@ Survey.cssType = 'bootstrapmaterial';
 let id = '';
 
 export const Membership = () => {
-  const data = useSSRContent('/membership.yml');
+  const data = useContent('/membership.yml');
   const [state, setState] = useState({ stage: 'before' });
   if (state.stage === 'before') {
     return (

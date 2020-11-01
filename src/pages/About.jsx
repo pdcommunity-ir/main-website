@@ -5,11 +5,11 @@ import { Layout } from "../components/Layout.jsx";
 import { SectionYml } from "../components/SectionYml.jsx";
 import { SEO } from "../components/SEO.jsx";
 import { StatusBadge } from "../components/StatusBadge.jsx";
-import { useSSRContent } from "../useSSRContent.js";
+import { useContent } from "react-ssg";
 import { indexMarkdownFolder } from "../util/indexFolder.js";
 
 const AboutSpecial = ({ section }) => {
-  const data = useSSRContent();
+  const data = useContent();
   const projects = indexMarkdownFolder(data, 'projects');
   projects.sort((a, b) => b.year - a.year);
   return ( <Container>

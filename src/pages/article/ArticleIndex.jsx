@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 
 import { Layout } from "../../components/Layout.jsx"
 import { SEO } from "../../components/SEO.jsx"
-import { useSSRContent } from "../../useSSRContent.js";
+import { useContent } from "react-ssg";
 import { indexMarkdownFolder } from "../../util/indexFolder.js";
 
 const filterArticles = (articles, cn) => articles.filter(
@@ -31,7 +31,7 @@ const f = (articles, categories) => categories.map((x) => {
 }); 
 
 export const ArticleIndex = () => {
-  const data = useSSRContent();
+  const data = useContent();
   const categories = data['/category.yml'].items;
   const words = data['/article.yml'].index;
   const articles = indexMarkdownFolder(data, 'articles');

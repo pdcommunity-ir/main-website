@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import React, { useState } from "react"
 import { Navbar as RBN, Nav, NavDropdown, Fade } from "react-bootstrap";
 import styles from "./navbar.module.css";
-import { useSSRContent } from "../../useSSRContent";
+import { useContent } from "react-ssg";
 
 const NItem = ({ to, label, fg }) => (
   <Nav.Link style={{ color: fg }} as={Link} className={styles.navbutton} to={to}>
@@ -34,7 +34,7 @@ const LangButton = ({ to, label, bg, fg }) => {
 };
 
 export const Navbar = ({ bg = "#f44333", fg = "#fff" }) => {
-  const data = useSSRContent('/navbar.yml').buttons;
+  const data = useContent('/navbar.yml').buttons;
   return (
     <RBN 
       className={styles.navbar} variant="dark" fixed="top" expand="md"

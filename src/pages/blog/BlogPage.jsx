@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Layout } from '../../components/Layout.jsx';
 import { Row, Col } from 'react-bootstrap';
-import { useSSRContent } from '../../useSSRContent.js';
+import { useContent } from 'react-ssg';
 import { HtmlElement } from '../../components/HtmlElement.jsx';
 import { SEO } from '../../components/SEO.jsx';
 import { indexMarkdownFolder } from '../../util/indexFolder.js';
@@ -10,7 +10,7 @@ import { NotFoundPage } from '../NotFoundPage.jsx';
 
 export const BlogPage = () => {
   const { id } = useParams('id');
-  const db = useSSRContent();
+  const db = useContent();
   const d = db[`/blogs/${id}.md`];
   if (!d) {
     return <NotFoundPage/>

@@ -4,13 +4,13 @@ import { Layout } from "../components/Layout.jsx"
 import { SEO } from "../components/SEO.jsx"
 import styles from "./faq.module.css";
 import classNames from "classnames";
-import { useSSRContent } from "../useSSRContent";
+import { useContent } from "react-ssg";
 import { HtmlElement } from "../components/HtmlElement.jsx";
 import { Link } from "react-router-dom";
 
 const Question = ({ q }) => {
   const [active, setActive] = useState(false);
-  const data = useSSRContent();
+  const data = useContent();
   const w = data['/faq.yml'].words;
   return ( <div onClick={()=>setActive(!active)}>
     <div className={classNames({
@@ -41,7 +41,7 @@ const Question = ({ q }) => {
 };
 
 export const FAQ = () => {
-  const data = useSSRContent('/faq.yml');
+  const data = useContent('/faq.yml');
   return (
     <Layout>
       <SEO title={data.title}/>

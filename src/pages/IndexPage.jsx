@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 import { Layout } from "../components/Layout.jsx"
 import { SEO } from "../components/SEO.jsx"
-import { useSSRContent } from "../useSSRContent.js";
+import { useContent } from "react-ssg";
 import styles from "./IndexPage.module.css";
 import { Container } from "react-bootstrap";
 import { Button } from "react-bootstrap";
@@ -12,7 +12,7 @@ import Typed from 'react-typed';
 import { SectionYml } from "../components/SectionYml.jsx";
 
 export const IndexPage = () => {
-  const data = useSSRContent('/home.yml');
+  const data = useContent('/home.yml');
   const { ref, inView, entry } = useInView({
     /* Optional options */
     threshold: .1,
