@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "node build/compile.mjs",
     "build": "node build/buildData.mjs && node babeloutput/main.js",
-    "dev": "node dev/main.mjs",
+    "dev": "node react-ssg.mjs dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -32,6 +32,7 @@
     "react-typed": "^1.2.0",
     "style-loader": "^1.2.1",
     "survey-react": "^1.8.11",
+    "webpack": "^5.3.2",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
@@ -42,7 +43,6 @@
     "@babel/preset-env": "^7.11.5",
     "assets-webpack-plugin": "^5.1.1",
     "babel-loader": "^8.1.0",
-    "webpack": "^4.44.1",
     "webpack-node-externals": "^2.5.2"
   }
 }
