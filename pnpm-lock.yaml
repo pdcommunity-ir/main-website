@@ -16,6 +16,7 @@ dependencies:
   react-intersection-observer: 8.28.5_react@17.0.1
   react-router-dom: 5.2.0_react@17.0.1
   react-router-hash-link: 2.2.2_aeb7484792d0c6389f95b68155fa18ae
+  react-ssg: 0.1.0_react@17.0.1+webpack@5.3.2
   react-typed: 1.2.0_react-dom@17.0.1+react@17.0.1
   style-loader: 1.2.1_webpack@5.3.2
   survey-react: 1.8.11_react-dom@17.0.1+react@17.0.1
@@ -1435,6 +1436,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
+  /argparse/2.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
   /arr-diff/4.0.0:
     engines:
       node: '>=0.10.0'
@@ -1486,6 +1491,16 @@ packages:
       node: '>=10.x.x'
     resolution:
       integrity: sha512-7cl4QRmNDU89GrzeaHBi0wNMdRlHNMunza5GpB1yAv4s09UqfZfcKBFvlz5PKSinAWsnfWW4lLcR9LLpVKZHSQ==
+  /assets-webpack-plugin/6.0.3:
+    dependencies:
+      camelcase: 6.2.0
+      escape-string-regexp: 4.0.0
+      lodash: 4.17.20
+    dev: false
+    engines:
+      node: '>=10.x.x'
+    resolution:
+      integrity: sha512-WiCV3odaOXehoM1pSaOuqWkGDEL2cF8SZ+iwwAUNm4X6G0lTuJHT2n1Lg3kemJLP/PBJGAzAIogQhLyOBOHWAQ==
   /assign-symbols/1.0.0:
     engines:
       node: '>=0.10.0'
@@ -2123,6 +2138,12 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-8KMDF1Vz2gzOq54ONPJS65IvTUaB1cHJ2DMM7MbPmLZljDH1qpzzLsWdiN9pHh6qvkRVDTi/07+eNGch/oLU4w==
+  /camelcase/6.2.0:
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
   /caniuse-lite/1.0.30001129:
     dev: true
     resolution:
@@ -2242,6 +2263,12 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
+  /commander/6.2.0:
+    dev: false
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-zP4jEKbe8SHzKJYQmq8Y9gYjtO/POJLgIdKgV7B9qNmABVFVc+ctqSX6iXh4mCpJfRBOabiZ2YKPg8ciDw6C+Q==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -2535,7 +2562,6 @@ packages:
     resolution:
       integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
   /escape-string-regexp/4.0.0:
-    dev: true
     engines:
       node: '>=10'
     resolution:
@@ -3490,6 +3516,17 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-aU1TzmBKcWNNYvH9pjq6u92BML+Hz3h5S/QpfTFwiQF852pLT+9qHsrhM9JYipkOXZxGn+sGH8oyJE9FD9WezQ==
+  /markdown-it/12.0.2:
+    dependencies:
+      argparse: 2.0.1
+      entities: 2.0.3
+      linkify-it: 3.0.2
+      mdurl: 1.0.1
+      uc.micro: 1.0.6
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-4Lkvjbv2kK+moL9TbeV+6/NHx+1Q+R/NIdUlFlkqkkzUcTod4uiyTJRiBidKR9qXSdkNFkgv+AELY8KN9vSgVA==
   /mdurl/1.0.1:
     dev: false
     resolution:
@@ -4243,6 +4280,21 @@ packages:
       react: ^16.3.0
     resolution:
       integrity: sha512-IgmcegOSi5SNX+2Snh1vqmF0Vg/CbkycU9XZbOHJlZ6kMzTmi3yc254oB1WCkgA7OQtIAoLmcSFuHTc/tlcqXg==
+  /react-ssg/0.1.0_react@17.0.1+webpack@5.3.2:
+    dependencies:
+      assets-webpack-plugin: 6.0.3
+      commander: 6.2.0
+      fs-extra: 9.0.1
+      markdown-it: 12.0.2
+      react: 17.0.1
+      webpack: 5.3.2_webpack@5.3.2
+      yamljs: 0.3.0
+    dev: false
+    peerDependencies:
+      react: ^17.0.1
+      webpack: ^5.3.2
+    resolution:
+      integrity: sha512-uC2JO7FTxkdHxVILR60aWkLibl8IVF4nOED6HhELrQeYaJmXNQ6KihTwP6kk+O8MaVJEIzfytmCybq1ilQq2aA==
   /react-transition-group/4.4.1_react-dom@17.0.1+react@17.0.1:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -5179,6 +5231,7 @@ specifiers:
   react-intersection-observer: ^8.28.5
   react-router-dom: ^5.2.0
   react-router-hash-link: ^2.2.2
+  react-ssg: ^0.1.0
   react-typed: ^1.2.0
   style-loader: ^1.2.1
   survey-react: ^1.8.11
