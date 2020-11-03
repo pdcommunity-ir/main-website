@@ -3,7 +3,7 @@ import { rootFolder } from "./paths.mjs";
 import path from "path";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 //import ErrorOverlayPlugin from "error-overlay-webpack-plugin";
-
+import { urls } from "./urls.mjs";
 
 cli({
   path: {
@@ -31,7 +31,10 @@ cli({
               MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
-                options: { modules: true, url: false },
+                options: {
+                  modules: { localIdentName: '[contenthash:base64]' },
+                  url: false,
+                },
               },
             ],
           },
@@ -39,4 +42,5 @@ cli({
       },
     },
   },
+  urls,
 });

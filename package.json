@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "node build/compile.mjs",
-    "build": "node build/buildData.mjs && node babeloutput/main.js",
+    "build": "node react-ssg.mjs build",
     "dev": "node react-ssg.mjs dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
