@@ -1,3 +1,4 @@
 babeloutput
 node_modules
 public
+*gitignore.js
