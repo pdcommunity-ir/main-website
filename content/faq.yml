@@ -8,6 +8,7 @@ description: |
   <a href="/about#contact">با ما تماس بگیرید</a>.
 questions:
   - question: آیا داده های عمومی ضرر پنهانی برای من دارند که رایگان در اختیار من قرار می گیرند؟
+    id: hidden-cost
     related:
       - customer-or-product
     answer: |
@@ -19,6 +20,7 @@ questions:
       مالک این داده هاست و کسی نمی تواند از آن سوء استفاده کند.
       </p>
   - question: چرا کسی باید داده هایش را برای عموم منتشر کند؟
+    id: why-make-public-data
     answer: |
       <p>
       علاوه بر نیت های خداپسندانه یا بشردوستانه، انگیزه های زیادی برای منتشر کردن
@@ -32,6 +34,7 @@ questions:
       - why-someone-make-common-data
       - make-money-from-developing
   - question: داده های عمومی افراد را بیکار می کند و به صنایع آسیب می زند؟
+    id: unemployed
     answer: |
       <p>
       ممکن است این طور به نظر برسد که داده های عمومی شرکت ها را از بین می برد و کارمندان
@@ -42,6 +45,7 @@ questions:
       به کار بر روی داده های عمومی جایگزین مشغول شوند.
       </p>
   - question: آیا این حق هر کسی نیست که داده هایش را انحصار کند؟
+    id: right-private
     answer: |
       <p>
       مفهوم حق مفهومیست که در طول
@@ -68,6 +72,7 @@ questions:
       </a>)
       </p>
   - question: آیا می توان از داده های عمومی پول در آورد؟
+    id: make-money
     answer: |
       <p>
       شما نمی توانید داده های عمومی که تولید کرده اید را بفروشید، چون همه به آن
@@ -94,6 +99,7 @@ questions:
       - make-money-from-developing
       - crowdfunding
   - question: آیا داده های عمومی پیشرفت جامعه را کند می کنند؟
+    id: development-speed
     answer: |
       <p>
       این یک حقیقت است که افراد برای توسعه داده های انحصاری، انگیزه به شدت
@@ -121,6 +127,7 @@ questions:
     related:
       - free-rider-problem
   - question: داده های عمومی چه ارتباطی با گرایش های چپ سیاسی دارند؟
+    id: politics-lefts
     answer: |
       داده های عمومی یک مساله سیاسی نیستند. برای تولید و ترویج داده های عمومی
       نیازی به یک دولت یا حکومت نیست و در هر دولتی با هر قوانینی می توان

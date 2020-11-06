@@ -37,7 +37,10 @@ export const App = () => (
       <Route path="/about">
         <About/>
       </Route>
-      <Route path="/faq">
+      <Route path="/faq/:id">
+        <FAQ/>
+      </Route>
+      <Route path="/faq/">
         <FAQ/>
       </Route>
       <Route path="/membership">

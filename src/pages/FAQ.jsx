@@ -6,19 +6,34 @@ import styles from "./faq.module.css";
 import classNames from "classnames";
 import { useContent } from "react-ssg";
 import { HtmlElement } from "../components/HtmlElement.jsx";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useRef } from "react";
+import { useEffect } from "react";
+import { Button } from "react-bootstrap";
+import { ToastsContainer, ToastsStore } from 'react-toasts';
 
-const Question = ({ q }) => {
-  const [active, setActive] = useState(false);
+const Question = ({ q, defaultActive = false, r }) => {
+  const [active, setActive] = useState(defaultActive);
   const data = useContent();
   const w = data['/faq.yml'].words;
   return ( <div onClick={()=>setActive(!active)}>
     <div className={classNames({
       [styles.accordion]: true,
       [styles.active]: active,
-    })}>
+    })} ref={r}>
       <span className={styles.bilbilak}>{active ? '➖' : '➕'}</span>
-      <h2>{q.question}</h2>
+      <h2 className={styles.title}>{q.question}</h2>
+      <Button
+        variant="primary" className={styles.copyButton}
+        onClick={async (e)=>{
+          e.stopPropagation();
+          const t = `${window.location.origin}/faq/${q.id}/`;
+          await navigator.clipboard.writeText(t);
+          ToastsStore.success("لینک سوال کپی شد");
+        }}
+      >
+        <i className="fa fa-copy"/>
+      </Button>
     </div>
     <div className={classNames({
       [styles.panel]: true,
@@ -42,14 +57,29 @@ const Question = ({ q }) => {
 
 export const FAQ = () => {
   const data = useContent('/faq.yml');
+  const { id } = useParams('id');
+  const sq = useRef();
+  useEffect(() => {
+    if (sq.current) {
+      sq.current.scrollIntoView({
+        block: 'center',
+      });
+    }
+  }, [id]);
   return (
     <Layout>
       <SEO title={data.title}/>
       <h1>{data.title}</h1>
       <HtmlElement content={data.description}/>
-      {data.questions.map((q)=>(
-        <Question key={q.question} q={q}/>
-      ))}
+      {data.questions.map((q)=>{
+        if (id === q.id) {
+          return (
+            <Question key={q.question} q={q} defaultActive r={sq}/>
+          );
+        }
+        return <Question key={q.question} q={q}/>;
+      })}
+      <ToastsContainer store={ToastsStore}/>
     </Layout>
   );
 };
