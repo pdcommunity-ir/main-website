@@ -11,4 +11,5 @@ export const urls = (data) => [
   ...Object.keys(data).filter((x)=>x.startsWith('/projects/')).map(removeMD),
   ...Object.keys(data).filter((x)=>x.startsWith('/licenses/markdown/'))
     .map(removeMD).map((x)=>`/license/${x.slice('/licenses/markdown/'.length)}`),
+  ...data['/faq.yml'].questions.map((x)=>`/faq/${x.id}/`),
 ];
