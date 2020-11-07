@@ -49,7 +49,7 @@ const Question = ({ q, defaultActive = false, r }) => {
         <ul>
           {q.related.map((x)=>{
             const title = data[`/articles/${x}.md`].frontmatter.title;
-            return <li><Link key={x} to={`/articles/${x}/`}>{title}</Link></li>;
+            return <li key={x}><Link to={`/articles/${x}/`}>{title}</Link></li>;
           })}
         </ul>
       </p>}
