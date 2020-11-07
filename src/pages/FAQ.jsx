@@ -10,10 +10,10 @@ import { Link, useParams } from "react-router-dom";
 import { useRef } from "react";
 import { useEffect } from "react";
 import { Button } from "react-bootstrap";
-import { ToastsContainer, ToastsStore } from 'react-toasts';
 
 const Question = ({ q, defaultActive = false, r }) => {
   const [active, setActive] = useState(defaultActive);
+  const [showToast, setShowToast] = useState(false);
   const data = useContent();
   const w = data['/faq.yml'].words;
   return ( <div onClick={()=>setActive(!active)}>
@@ -29,10 +29,12 @@ const Question = ({ q, defaultActive = false, r }) => {
           e.stopPropagation();
           const t = `${window.location.origin}/faq/${q.id}/`;
           await navigator.clipboard.writeText(t);
-          ToastsStore.success("لینک سوال کپی شد");
+          setShowToast(true);
+          await new Promise((res) => setTimeout(res, 1000));
+          setShowToast(false);
         }}
       >
-        <i className="fa fa-copy"/>
+        {showToast ? "لینک سوال کپی شد" : <i className="fa fa-copy"/>}
       </Button>
     </div>
     <div className={classNames({
@@ -79,7 +81,6 @@ export const FAQ = () => {
         }
         return <Question key={q.question} q={q}/>;
       })}
-      <ToastsContainer store={ToastsStore}/>
     </Layout>
   );
 };
