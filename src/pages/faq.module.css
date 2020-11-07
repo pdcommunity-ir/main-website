@@ -36,7 +36,7 @@ margin-top: -10px;
 }
 
 div.panel.show {
-  max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+  max-height: 50000px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
 .title {
