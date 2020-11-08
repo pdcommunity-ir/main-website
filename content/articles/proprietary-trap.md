@@ -3,11 +3,9 @@ title: داده انحصاری یک تله است
 category:
   - general
 related:
+  - benefit-of-not-using-proprietary
   - proprietary-problems
 ---
-
-<img src="/images/rat-trap.JPG" alt="تله موش"
-	title="تله موش" style="display:inline-block; float:left; width: 25%;" />
 
 بسیاری از داده های انحصاری استفاده می کنند و فکر می کنند که با استفاده از آن در
 حال سود بردن هستند. این فکر آن ها مانند فکر موشی است که از خوردن پنیر درون تله لذت

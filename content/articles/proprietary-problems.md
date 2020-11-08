@@ -5,6 +5,7 @@ category:
   - general
 related:
   - why-hoarding-is-bad
+  - benefit-of-not-using-proprietary
   - prevent-make-proprietary
   - proprietary-trap
   - proprietary-profit
