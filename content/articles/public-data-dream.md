@@ -6,6 +6,7 @@ related:
   - desktop-factory
   - proprietary-problems
   - education-is-data
+  - is-public-data-practical
 ---
 
 تا به حال به این فکر کرده اید که اگر همه داده ها در جهان عمومی بود، جهان به چه شکل
