@@ -71,6 +71,11 @@ questions:
         کپی لفت
       </a>)
       </p>
+  - question: داده های عمومی یک مفهوم عملی است یا آرمان گرایانه؟
+    id: is-practical
+    answer: ""
+    related:
+      - is-public-data-practical
   - question: آیا می توان از داده های عمومی پول در آورد؟
     id: make-money
     answer: |

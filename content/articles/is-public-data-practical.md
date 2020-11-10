@@ -3,7 +3,6 @@ title: آیا داده های عمومی عملی است؟
 category:
   - general
   - economy
-incomplete: true
 related:
   - public-data-dream
   - benefit-of-not-using-proprietary
