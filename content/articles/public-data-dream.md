@@ -3,6 +3,7 @@ title: رویای داده های عمومی
 category:
   - general
 related:
+  - distributed-production
   - desktop-factory
   - proprietary-problems
   - education-is-data
@@ -49,7 +50,7 @@ related:
 برای این موضوع لوازم تولید عام منظوره در سطح شخصی، مانند پرینتر های سه بعدی می توانند
 بسیار در زمان و پیچیدگی تولید تاثیر گذار باشند و این موضوع را از یک ایده تخیلی به
 قابل اجرا تبدیل کنند. برای اطلاعات بیشتر
-[کارخانه های رومیزی](/articles/desktop-factory)
+[تولید غیر متمرکز](/articles/distributed-production)
 را ببینید.
 
 
