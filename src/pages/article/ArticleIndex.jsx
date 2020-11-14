@@ -6,6 +6,8 @@ import { Layout } from "../../components/Layout.jsx"
 import { SEO } from "../../components/SEO.jsx"
 import { useContent } from "react-ssg";
 import { indexMarkdownFolder } from "../../util/indexFolder.js";
+import { Card } from "react-bootstrap";
+import { CardColumns } from "react-bootstrap";
 
 const filterArticles = (articles, cn) => articles.filter(
   ({ category = [] }) => category.find((y) => y === cn)
@@ -15,8 +17,9 @@ const f = (articles, categories) => categories.map((x) => {
   const ax = filterArticles(articles, x.name);
   if (ax.length === 0) return undefined;
   return (
-    <li key={x.name}>
-      {x.label}
+    <Card key={x.name}>
+      <Card.Header>{x.label}</Card.Header>
+      <Card.Body>
       <ul>
         {ax.map((y)=> (
           <li key={y.url}>
@@ -26,7 +29,8 @@ const f = (articles, categories) => categories.map((x) => {
           </li>
         ))}    
       </ul>
-    </li>
+      </Card.Body>
+    </Card>
   );
 }); 
 
@@ -44,15 +48,15 @@ export const ArticleIndex = () => {
     </div>}
     <h1>{words.title}</h1>
     <p>{words.description}</p>
-    <ul>
+    <CardColumns>
       {f(articles.filter((x) => !x.incomplete), categories)}
-    </ul>
+    </CardColumns>
     <h2>{words.draft.title}</h2>
     <p>
       {words.draft.description} <HashLink to="/about#contact">{words.draft.contact}</HashLink>
     </p>
-    <ul>
+    <CardColumns>
       {f(articles.filter((x) => x.incomplete), categories)}
-    </ul>
+    </CardColumns>
   </Layout> );
 };
