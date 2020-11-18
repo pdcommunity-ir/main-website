@@ -1,0 +1,49 @@
+index:
+  title: فهرست شرکت ها و موسسات
+  description: |
+    در این صفحه فهرست نهاد هایی که فعالیتشان تولید یا ترویج داده های عمومی است
+    جمع آوری شده است. هدف این فهرست، انتقال تجربیات آن ها به شماست. برای اطلاعات
+    بیشتر و دیدن معنای کلمات و اعداد این جدول،
+    <a href="/articles/public-data-companies/">این صفحه</a>
+    را ببینید.
+
+tagMeta:
+  util:
+    empty: نامعلوم
+    error: خطا
+  index:
+    industry: صنعت
+    type: گونه
+    business: مدل درآمدزایی
+    employee: کارمندان
+    revenue: درآمد
+    marketCap: ارزش
+    title: نام
+  type:
+    industry: tag
+    type: tag
+    business: tag
+    employee: number
+    revenue: money
+    marketCap: money
+    title: text
+tags:
+  industry:
+    software: نرم افزار
+    hardware: سخت افزار
+    machinery: ماشین آلات
+    education: آموزش
+  type:
+    subsidiary: شرکت تابعه
+    private: شرکت خصوصی
+    stock: سهامی عام
+    nonprofit: سازمان غیر انتفاعی
+  business:
+    technicalService: خدمات فنی
+    support: پشتیبانی
+    donation: اعانه
+    productSell: فروش محصول
+    onlineService: خدمات آنلاین
+    openCore: هسته باز
+    seatSell: فروش صندلی
+

@@ -21,8 +21,8 @@ links:
   items:
     - href: "/articles/proprietary-problems/"
       label: داده های انحصاری چه مشکلاتی دارند؟
-    - href: "/articles/why-someone-make-common-data/"
-      label: انگیزه های تولید داده عمومی
+    - href: "/companies/"
+      label: شرکت ها و موسسات فعال
     - href: "/articles/prevent-make-proprietary/"
       label: چگونه داده انحصاری تولید نکنیم؟
     - href: "/articles/public-data-dream/"
