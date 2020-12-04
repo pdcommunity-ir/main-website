@@ -5,6 +5,7 @@ category:
 related:
   - benefit-of-not-using-proprietary
   - proprietary-problems
+  - drm
 ---
 
 بسیاری از داده های انحصاری استفاده می کنند و فکر می کنند که با استفاده از آن در
