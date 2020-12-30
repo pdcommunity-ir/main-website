@@ -30,6 +30,7 @@
     "react-router-hash-link": "^2.2.2",
     "react-ssg": "^0.1.4",
     "react-typed": "^1.2.0",
+    "reading-time": "^1.2.1",
     "style-loader": "^1.2.1",
     "survey-react": "^1.8.11",
     "webpack": "^5.3.2",

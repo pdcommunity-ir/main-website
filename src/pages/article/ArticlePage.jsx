@@ -6,11 +6,13 @@ import { useContent } from 'react-ssg';
 import { HtmlElement } from '../../components/HtmlElement.jsx';
 import { SEO } from '../../components/SEO.jsx';
 import { NotFoundPage } from '../NotFoundPage.jsx';
+import readingTime from "reading-time";
 
 export const ArticlePage = () => {
   const { id } = useParams('id');
   const db = useContent();
   const d = db[`/articles/${id}.md`];
+  const time = Math.round(readingTime(d.html).minutes);
   if (!d) {
     return <NotFoundPage/>;
   }
@@ -25,6 +27,9 @@ export const ArticlePage = () => {
           {d.frontmatter.incomplete && <p style={{ fontStyle: 'italic' }}>
             این مقاله پیش‌نویس است و محتوای آن کامل نیست.
           </p>}
+          <p style={{ fontStyle: 'italic' }}>
+            زمان مطالعه: {time} دقیقه
+          </p>
           <HtmlElement content={d.html}/>
         </Col>
         <Col md={3}>
