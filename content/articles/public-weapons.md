@@ -5,6 +5,7 @@ category:
 incomplete: true
 related:
   - public-data-and-government
+  - public-data-exams
 ---
 
 آیا تا به حال فکر کرده اید که داده های ساخت بمب اتم عمومی شود؟ آیا این عمومی شدن

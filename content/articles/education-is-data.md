@@ -4,6 +4,7 @@ category:
   - education
 related:
   - public-data-dream
+  - public-data-exams
 ---
 
 آموزش یکی از مهم ترین چیز هاست که به وسیله آن، اطلاعات و توانایی هایمان را با یک دیگر
