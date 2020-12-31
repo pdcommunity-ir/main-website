@@ -18,6 +18,7 @@ dependencies:
   react-router-hash-link: 2.2.2_aeb7484792d0c6389f95b68155fa18ae
   react-ssg: 0.1.4_1e06a7ccbf6f8e39f33aaa0b9d779837
   react-typed: 1.2.0_react-dom@17.0.1+react@17.0.1
+  reading-time: 1.2.1
   style-loader: 1.2.1_webpack@5.3.2
   survey-react: 1.8.11_react-dom@17.0.1+react@17.0.1
   webpack: 5.3.2_webpack@5.3.2
@@ -4409,6 +4410,10 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha512-1JU/8q+VgFZyxwrJ+SVIOsh+KywWGpds3NTqikiKpDMZWScmAYyKIgqkO+ARvNWJfXeXR1zxz7aHF4u4CyH6vQ==
+  /reading-time/1.2.1:
+    dev: false
+    resolution:
+      integrity: sha512-a27kU9sCJzx4JklmKFMXgMoCWlhBi75DFTbU7+M3rjh5SXRWyacYt02il3muYaA+SUQ7tg5gMQn7GC8zOxTt/g==
   /recursive-readdir/2.2.2:
     dependencies:
       minimatch: 3.0.4
@@ -5321,6 +5326,7 @@ specifiers:
   react-router-hash-link: ^2.2.2
   react-ssg: ^0.1.4
   react-typed: ^1.2.0
+  reading-time: ^1.2.1
   style-loader: ^1.2.1
   survey-react: ^1.8.11
   webpack: ^5.3.2
