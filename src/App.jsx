@@ -11,7 +11,6 @@ import { withRouter } from 'react-router-dom';
 import { ProjectPage } from "./pages/project/ProjectPage.jsx";
 import { BlogIndex } from "./pages/blog/BlogIndex.jsx";
 import { LicensePage } from "./pages/license/LicensePage.jsx";
-import { Membership } from "./pages/Membership.jsx";
 import { CompanyPage } from "./pages/company/CompanyPage.jsx";
 import { CompanyIndex } from "./pages/company/CompanyIndex.jsx";
 
@@ -44,9 +43,6 @@ export const App = () => (
       </Route>
       <Route path="/faq/">
         <FAQ/>
-      </Route>
-      <Route path="/membership">
-        <Membership/>
       </Route>
       <Route path="/projects/:id">
         <ProjectPage/>
