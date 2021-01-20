@@ -15,7 +15,7 @@ export const BlogPage = () => {
   if (!d) {
     return <NotFoundPage/>
   }
-  const blogs = indexMarkdownFolder(db, 'blogs');
+  const blogs = indexMarkdownFolder(db, 'blogs').sort((a, b) => a.date < b.date ? 1 : -1).slice(0, 3);
   return (
     <Layout>
       <SEO title={d.frontmatter.title}/>
