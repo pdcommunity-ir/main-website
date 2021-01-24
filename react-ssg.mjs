@@ -8,6 +8,7 @@ import { urls } from "./urls.mjs";
 cli({
   path: {
     root: rootFolder,
+    wellKnown: path.join(rootFolder, '.well-known'),
   },
   webpack: {
     baseConfig: {

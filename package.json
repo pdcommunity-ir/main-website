@@ -28,7 +28,7 @@
     "react-intersection-observer": "^8.28.5",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.2.2",
-    "react-ssg": "^0.1.4",
+    "react-ssg": "^0.1.5",
     "react-typed": "^1.2.0",
     "reading-time": "^1.2.1",
     "style-loader": "^1.2.1",
