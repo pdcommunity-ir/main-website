@@ -5,7 +5,7 @@ const removeMD = (x)=>{
 };
 
 export const urls = (data) => [
-  "/", "/about/", "/faq/", "/articles/", "/blogs/", "/membership/",
+  "/", "/about/", "/faq/", "/articles/", "/blogs/", "/membership/", "/intro/",
   "/companies/",
   ...Object.keys(data).filter((x)=>x.startsWith('/articles/')).map(removeMD),
   ...Object.keys(data).filter((x)=>x.startsWith('/blogs/')).map(removeMD),

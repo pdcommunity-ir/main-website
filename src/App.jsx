@@ -13,6 +13,7 @@ import { BlogIndex } from "./pages/blog/BlogIndex.jsx";
 import { LicensePage } from "./pages/license/LicensePage.jsx";
 import { CompanyPage } from "./pages/company/CompanyPage.jsx";
 import { CompanyIndex } from "./pages/company/CompanyIndex.jsx";
+import { IntroPage } from "./pages/intro/Intro.jsx";
 
 const ScrollToTop = withRouter(({ history }) => {
   useEffect(() => {
@@ -23,7 +24,6 @@ const ScrollToTop = withRouter(({ history }) => {
       unlisten();
     }
   }, []);
-
   return (null);
 });
 
@@ -67,6 +67,9 @@ export const App = () => (
       </Route>
       <Route path="/companies">
         <CompanyIndex/>
+      </Route>
+      <Route path="/intro">
+        <IntroPage/>
       </Route>
       <Route path="*">
         <NotFoundPage/>

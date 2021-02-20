@@ -33,7 +33,10 @@ cli({
               {
                 loader: 'css-loader',
                 options: {
-                  modules: { localIdentName: '[contenthash:base64]' },
+                  modules: { 
+                    auto: (x) => { return !x.endsWith('.notmodule.css'); },
+                    localIdentName: '[contenthash:base64]'
+                  },
                   url: false,
                 },
               },
