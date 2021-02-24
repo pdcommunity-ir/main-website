@@ -1,5 +1,6 @@
 import React from 'react';
-import { Impress, Step } from 'react-impressjs';
+import Impress from "../../components/impress/Impress";
+import Step from "../../components/impress/Step";
 import { useContent } from 'react-ssg';
 // styles of react-impressjs
 import './impress.notmodule.css';
