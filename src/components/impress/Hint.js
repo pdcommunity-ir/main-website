@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 
+const isSSR = typeof document === 'undefined';
+
+
 export default class Hint extends Component {
   render() {
     const {hint, stepsData, activeStep, hintMessage} = this.props;
-    const ua = navigator.userAgent.toLowerCase();
+    const ua = isSSR ? '' : navigator.userAgent.toLowerCase();
     const isMobile = (ua.search(/(iphone)|(ipod)|(android)/) === -1);
 
     // Swipe-right from www.flaticon.com

@@ -1,3 +1,5 @@
+const isSSR = typeof document === 'undefined';
+
 export function toNumber(numeric, fallback) {
   return isNaN(numeric) ? (fallback || 0) : Number(numeric);
 }
@@ -24,6 +26,7 @@ export function perspective(p) {
 }
 
 export function computeWindowScale(config) {
+  if (isSSR) return 1;
   let hScale = window.innerHeight / config.height,
       wScale = window.innerWidth / config.width,
       scale  = hScale > wScale ? wScale : hScale;
@@ -65,6 +68,7 @@ export const pfx = (() => {
 })();
 
 export function css(el, props) {
+  if (isSSR) return;
   for (let key in props) {
     if (props.hasOwnProperty(key)) {
       let pkey = pfx(key);

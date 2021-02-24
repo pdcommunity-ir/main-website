@@ -33,7 +33,7 @@ export const IndexPage = () => {
             typeSpeed={30} backDelay={2000}
           /> {data.header.forall}
         </p>
-        <Button size="lg" variant="primary" as="a" href="/intro">
+        <Button size="lg" variant="primary" as={Link} to="/intro">
           {data.header.button}
         </Button>
       </div>
