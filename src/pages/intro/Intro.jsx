@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Impress from "../../components/impress/Impress";
 import Step from "../../components/impress/Step";
 import { useContent } from 'react-ssg';
 import { Helmet } from 'react-helmet';
+import { Layout } from '../../components/Layout.jsx';
+import { SEO } from '../../components/SEO.jsx';
+import { Button } from 'react-bootstrap';
 
 const globalCss = `
 html, body, div, span, applet, object, iframe,
@@ -695,11 +698,23 @@ const dfs = (node) => {
 };
 
 export const IntroPage = () => {
-  const data = useContent('/intro.yml').slides;
+  const data = useContent('/intro.yml');
   const demo = dfs({
     type: 'group',
-    child: data,
+    child: data.slides,
   });
+  const [started, setStarted] = useState(false);
+  if (!started) {
+    return (
+        <Layout>
+            <SEO title="آشنایی با داده های عمومی"/>
+            <p style={{margin: '3rem 0 3rem 0', textAlign: 'center'}}>{data.initMessage}</p>
+            <div style={{margin: '3rem 0 3rem 0', textAlign: 'center'}}>
+                <Button onClick={()=>setStarted(true)}>{data.buttonMessage}</Button>
+            </div>
+        </Layout>
+    );
+  }
   return (
     <Impress progress={true}>
       <Helmet><style>{globalCss}</style></Helmet>
