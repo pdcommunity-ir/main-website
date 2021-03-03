@@ -46,7 +46,7 @@ export default class Step extends Component {
 
   // Step's Event
   handleClick(e) {
-    const {goto} = this.props;
+    /*const {goto} = this.props;
     let target = e.target;
 
     while (!target.classList.contains('step') &&
@@ -58,7 +58,7 @@ export default class Step extends Component {
 
     if (target !== document.documentElement)
       if (target.classList.contains('step'))
-        goto(this.state, this.state.duration);
+        goto(this.state, this.state.duration);*/
   }
 
   // Step's ID, ClassName, Style

@@ -14,8 +14,6 @@ import {
   translate,
 }                         from './util';
 
-import Hint     from './Hint';
-
 const isSSR = typeof document === 'undefined';
 
 const eSSR = (f, d = {}) => {
@@ -36,13 +34,17 @@ export default class Impress extends Component {
     super(props);
 
     const {rootData, hint, hintMessage, fallbackMessage, progress} = props;
-    const rootStyles = {
-      position: 'absolute',
-      top: '50%',
-      left: '50%',
+    
+    const baseStyles = {
       transformOrigin: 'top left',
       transition: 'all 0s ease-in-out',
       transformStyle: 'preserve-3d',
+    };
+    const rootStyles = {
+      ...baseStyles,
+      position: 'absolute',
+      top: '50vh',
+      left: '50vw',
     };
     const defaultData = {
       x: 0, y: 0, z: 0,
@@ -64,7 +66,7 @@ export default class Impress extends Component {
       },
 
       /** Camera Status **/
-      cameraStyles: rootStyles,
+      cameraStyles: baseStyles,
 
       /** Public attributes provide to use **/
       rootData: rootData, // (not recommended)
@@ -382,11 +384,8 @@ export default class Impress extends Component {
 
   // Touch End( decide navigate previous or next Step via 'deltaX' )
   handleTouchEnd(e) {
-    if (this.state.deltaX > 0) // slide left
-      this.next();
-    else if (this.state.deltaX < 0) // slide right
-      this.prev();
-
+    this.next();
+    
     // reset
     this.setState({
       deltaX: 0,
@@ -443,11 +442,6 @@ export default class Impress extends Component {
               }
             </div>
           </div>
-          <Hint
-              hint={hint}
-              stepsData={_stepsData}
-              activeStep={activeStep}
-              hintMessage={hintMessage}/>
         </div>
     );
   }
