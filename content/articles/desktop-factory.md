@@ -3,6 +3,7 @@ title: کارخانه های رومیزی
 category:
   - distributed-production
 related:
+  - local-factory
   - distributed-production
   - public-data-dream
   - reprap-success
