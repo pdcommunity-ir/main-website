@@ -2,7 +2,7 @@
 title: داده های عمومی و اینترنت
 category:
   - general
-incomplete: true
+  - software
 related:
   - public-data-and-government
 ---
