@@ -27,6 +27,17 @@ export const ArticlePage = () => {
           {d.frontmatter.incomplete && <p style={{ fontStyle: 'italic' }}>
             این مقاله پیش‌نویس است و محتوای آن کامل نیست.
           </p>}
+          {d.frontmatter.tldr && <div style={{
+            backgroundColor: 'wheat', padding: '1rem', borderRadius: '1rem',
+            border: '2px dashed', marginBottom: '1rem',
+          }}>
+            <h4>در این نوشته می خوانید:</h4>
+            <ul style={{ marginBottom: '0' }}>
+              {d.frontmatter.tldr.map((k) => (
+                <li>{k}</li>
+              ))}
+            </ul>
+          </div>} 
           <p style={{ fontStyle: 'italic' }}>
             زمان مطالعه: {time} دقیقه
           </p>
