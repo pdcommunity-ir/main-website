@@ -2,7 +2,6 @@
 title: تشبیه تولید غیر متمرکز به شغل
 category:
   - distributed-production
-incomplete: true
 related:
   - distributed-production
   - public-data-dream
