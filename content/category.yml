@@ -13,3 +13,5 @@ items:
     label: داده های عمومی موفق در جهان
   - name: community
     label: درباره جمعیت داده های عمومی
+  - name: copyright
+    label: قوانین حق تکثیر

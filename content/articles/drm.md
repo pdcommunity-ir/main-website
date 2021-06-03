@@ -1,8 +1,9 @@
 ---
 title: مدیریت حقوق دیجیتال، از انحصار برای انحصار
 category:
-  - general
+  - copyright
 related:
+  - drm-pipeline
   - proprietary-problems
   - proprietary-trap
 ---
