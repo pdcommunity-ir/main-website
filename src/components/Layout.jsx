@@ -12,6 +12,7 @@ import { Helmet } from "react-helmet"
 import { Container } from "react-bootstrap"
 import { Navbar } from "./navbar/Navbar.jsx"
 import { useLocation } from "react-router-dom"
+import "./layout.css";
 
 export const Layout = ({ children, pure, navbar }) => {
   const location = useLocation();
