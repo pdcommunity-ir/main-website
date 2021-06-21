@@ -42,6 +42,11 @@ export const ArticlePage = () => {
             زمان مطالعه: {time} دقیقه
           </p>
           <HtmlElement content={d.html}/>
+          <p>
+            <a target="_blank" href={`https://framagit.org/pdcommunity/main-website/-/blob/master/content/articles/${id}.md`}>
+              این مقاله را ویرایش و بهبود دهید.
+            </a>
+          </p>
         </Col>
         <Col md={3}>
           <div style={{ position: 'sticky', top: '100px' }}>
