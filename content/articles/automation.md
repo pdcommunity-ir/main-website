@@ -2,6 +2,7 @@
 title: خودکار سازی
 category:
   - distributed-production
+  - future
 related:
   - distributed-production
   - public-data-dream

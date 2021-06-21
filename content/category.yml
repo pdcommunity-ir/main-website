@@ -15,3 +15,5 @@ items:
     label: درباره جمعیت داده های عمومی
   - name: copyright
     label: قوانین حق تکثیر
+  - name: future
+    label: داده های عمومی و آینده پژوهی

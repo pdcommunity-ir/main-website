@@ -2,6 +2,7 @@
 title: رویای داده های عمومی
 category:
   - general
+  - future
 related:
   - is-public-data-practical
   - distributed-production
